@@ -1,0 +1,7 @@
+# FinTech Hodl — Base DeFi yields and risk data
+
+> Data collection has started. Risk data, not investment advice.
+> Machine-readable data (https://yields.fintechhodl.com/data/opportunities.json) will appear here once the first report is published. It does not exist yet.
+
+## Contact
+https://fintechhodl.com/contact
