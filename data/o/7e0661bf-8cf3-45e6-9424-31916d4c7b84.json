@@ -1,0 +1,78 @@
+{
+  "schema_version": 1,
+  "source": "FinTech Hodl, LLC — Base DeFi risk intel",
+  "network": "base",
+  "as_of": "2026-10-22T15:00:00Z",
+  "captured_at": "2026-10-22T15:49:54.058Z",
+  "delay_hours": 24,
+  "preview": false,
+  "model_version": "1.3.0",
+  "disclaimer": "Risk data only, not investment advice.",
+  "terms": "Free to read and cite with attribution; delayed data for information only. Fresher data is planned as a paid x402 API.",
+  "item": {
+    "id": "7e0661bf-8cf3-45e6-9424-31916d4c7b84",
+    "protocol": "aave-v3",
+    "market": "USDC",
+    "type": "lending",
+    "apy": 4.92,
+    "sustainable_apy": 4.03,
+    "tvl_usd": 22410966,
+    "risk_score": 29,
+    "opportunity_score": 58,
+    "confidence": 100,
+    "yield_sustainability": 82,
+    "liquidity": "Good",
+    "primary_yield_source": "borrower_interest",
+    "yield_sources": [
+      {
+        "category": "borrower_interest",
+        "apy": 3.73,
+        "share": 0.757
+      },
+      {
+        "category": "token_incentives",
+        "apy": 1.2,
+        "share": 0.243
+      }
+    ],
+    "major_risks": [
+      {
+        "dimension": "governance",
+        "score": 37
+      },
+      {
+        "dimension": "yield",
+        "score": 34
+      },
+      {
+        "dimension": "oracle",
+        "score": 23
+      }
+    ],
+    "key_dependencies": [
+      {
+        "type": "protocol_family",
+        "name": "Aave"
+      },
+      {
+        "type": "oracle",
+        "name": "Chainlink"
+      },
+      {
+        "type": "issuer",
+        "name": "Circle"
+      }
+    ],
+    "governance_evidence": [
+      "Governance: token-holder governance with a 24-hour timelock (https://aave.com/docs/primitives/governance, checked 2026-10-07)"
+    ],
+    "tvl_change_7d_pct": 32.4,
+    "apy_change_7d_pct": 12.2,
+    "why_this_yield_exists": "Yield comes from borrower interest and token incentives. The income mix is fairly stable.",
+    "what_could_lose_money": "Main risks are governance changes, yield decline, and oracle problems. The setup depends on Chainlink and Circle.",
+    "what_changed_recently": "TVL +32.4% over 7 days, APY +12.2% over 7 days; no risk events this week. Social signals: not yet monitored.",
+    "text_source": "ai",
+    "url": "https://yields.fintechhodl.com/o/7e0661bf-8cf3-45e6-9424-31916d4c7b84/",
+    "data_url": "https://yields.fintechhodl.com/data/o/7e0661bf-8cf3-45e6-9424-31916d4c7b84.json"
+  }
+}

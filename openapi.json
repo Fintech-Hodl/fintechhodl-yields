@@ -1,0 +1,287 @@
+{
+  "openapi": "3.1.0",
+  "info": {
+    "title": "FinTech Hodl Base DeFi yield and risk data (free, delayed)",
+    "version": "1",
+    "description": "Risk data only, not investment advice. Static JSON files, refreshed hourly and delayed."
+  },
+  "servers": [
+    {
+      "url": "https://yields.fintechhodl.com"
+    }
+  ],
+  "paths": {
+    "/data/opportunities.json": {
+      "get": {
+        "summary": "The top 25 opportunities",
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "schema_version": {
+                      "type": "integer"
+                    },
+                    "as_of": {
+                      "type": "string"
+                    },
+                    "captured_at": {
+                      "type": "string"
+                    },
+                    "delay_hours": {
+                      "type": "number"
+                    },
+                    "model_version": {
+                      "type": "string"
+                    },
+                    "disclaimer": {
+                      "type": "string"
+                    },
+                    "count": {
+                      "type": "integer"
+                    },
+                    "items": {
+                      "type": "array",
+                      "items": {
+                        "type": "object",
+                        "properties": {
+                          "id": {
+                            "type": "string"
+                          },
+                          "protocol": {
+                            "type": "string"
+                          },
+                          "market": {
+                            "type": "string"
+                          },
+                          "type": {
+                            "type": "string"
+                          },
+                          "apy": {
+                            "type": "number",
+                            "description": "Percent per year"
+                          },
+                          "sustainable_apy": {
+                            "type": "number",
+                            "description": "Percent per year"
+                          },
+                          "tvl_usd": {
+                            "type": "number"
+                          },
+                          "risk_score": {
+                            "type": "number",
+                            "minimum": 0,
+                            "maximum": 100
+                          },
+                          "opportunity_score": {
+                            "type": "number",
+                            "minimum": 0,
+                            "maximum": 100
+                          },
+                          "confidence": {
+                            "type": "number"
+                          },
+                          "yield_sustainability": {
+                            "type": "number"
+                          },
+                          "liquidity": {
+                            "type": "string"
+                          },
+                          "primary_yield_source": {
+                            "type": "string"
+                          },
+                          "yield_sources": {
+                            "type": "array",
+                            "items": {
+                              "type": "object"
+                            }
+                          },
+                          "major_risks": {
+                            "type": "array",
+                            "items": {
+                              "type": "object"
+                            }
+                          },
+                          "key_dependencies": {
+                            "type": "array",
+                            "items": {
+                              "type": "object"
+                            }
+                          },
+                          "governance_evidence": {
+                            "type": "array",
+                            "items": {
+                              "type": "string"
+                            }
+                          },
+                          "why_this_yield_exists": {
+                            "type": "string"
+                          },
+                          "what_could_lose_money": {
+                            "type": "string"
+                          },
+                          "what_changed_recently": {
+                            "type": "string"
+                          },
+                          "url": {
+                            "type": "string"
+                          },
+                          "data_url": {
+                            "type": "string"
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/data/o/{id}.json": {
+      "get": {
+        "summary": "One opportunity",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            },
+            "description": "The file-safe id from a row's data_url"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "schema_version": {
+                      "type": "integer"
+                    },
+                    "as_of": {
+                      "type": "string"
+                    },
+                    "captured_at": {
+                      "type": "string"
+                    },
+                    "delay_hours": {
+                      "type": "number"
+                    },
+                    "model_version": {
+                      "type": "string"
+                    },
+                    "disclaimer": {
+                      "type": "string"
+                    },
+                    "item": {
+                      "type": "object",
+                      "properties": {
+                        "id": {
+                          "type": "string"
+                        },
+                        "protocol": {
+                          "type": "string"
+                        },
+                        "market": {
+                          "type": "string"
+                        },
+                        "type": {
+                          "type": "string"
+                        },
+                        "apy": {
+                          "type": "number",
+                          "description": "Percent per year"
+                        },
+                        "sustainable_apy": {
+                          "type": "number",
+                          "description": "Percent per year"
+                        },
+                        "tvl_usd": {
+                          "type": "number"
+                        },
+                        "risk_score": {
+                          "type": "number",
+                          "minimum": 0,
+                          "maximum": 100
+                        },
+                        "opportunity_score": {
+                          "type": "number",
+                          "minimum": 0,
+                          "maximum": 100
+                        },
+                        "confidence": {
+                          "type": "number"
+                        },
+                        "yield_sustainability": {
+                          "type": "number"
+                        },
+                        "liquidity": {
+                          "type": "string"
+                        },
+                        "primary_yield_source": {
+                          "type": "string"
+                        },
+                        "yield_sources": {
+                          "type": "array",
+                          "items": {
+                            "type": "object"
+                          }
+                        },
+                        "major_risks": {
+                          "type": "array",
+                          "items": {
+                            "type": "object"
+                          }
+                        },
+                        "key_dependencies": {
+                          "type": "array",
+                          "items": {
+                            "type": "object"
+                          }
+                        },
+                        "governance_evidence": {
+                          "type": "array",
+                          "items": {
+                            "type": "string"
+                          }
+                        },
+                        "why_this_yield_exists": {
+                          "type": "string"
+                        },
+                        "what_could_lose_money": {
+                          "type": "string"
+                        },
+                        "what_changed_recently": {
+                          "type": "string"
+                        },
+                        "url": {
+                          "type": "string"
+                        },
+                        "data_url": {
+                          "type": "string"
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "404": {
+            "description": "Unknown id"
+          }
+        }
+      }
+    }
+  }
+}

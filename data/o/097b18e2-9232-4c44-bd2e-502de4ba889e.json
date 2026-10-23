@@ -1,0 +1,79 @@
+{
+  "schema_version": 1,
+  "source": "FinTech Hodl, LLC — Base DeFi risk intel",
+  "network": "base",
+  "as_of": "2026-10-22T15:00:00Z",
+  "captured_at": "2026-10-22T15:49:54.058Z",
+  "delay_hours": 24,
+  "preview": false,
+  "model_version": "1.3.0",
+  "disclaimer": "Risk data only, not investment advice.",
+  "terms": "Free to read and cite with attribution; delayed data for information only. Fresher data is planned as a paid x402 API.",
+  "item": {
+    "id": "097b18e2-9232-4c44-bd2e-502de4ba889e",
+    "protocol": "morpho-blue",
+    "market": "CSCBUSDC",
+    "type": "lending",
+    "apy": 5.28,
+    "sustainable_apy": 4.41,
+    "tvl_usd": 62818157,
+    "risk_score": 20,
+    "opportunity_score": 70,
+    "confidence": 100,
+    "yield_sustainability": 83,
+    "liquidity": "Good",
+    "primary_yield_source": "borrower_interest",
+    "yield_sources": [
+      {
+        "category": "borrower_interest",
+        "apy": 4.11,
+        "share": 0.779
+      },
+      {
+        "category": "token_incentives",
+        "apy": 1.17,
+        "share": 0.221
+      }
+    ],
+    "major_risks": [
+      {
+        "dimension": "asset",
+        "score": 22
+      },
+      {
+        "dimension": "smart_contract",
+        "score": 19
+      },
+      {
+        "dimension": "oracle",
+        "score": 19
+      }
+    ],
+    "key_dependencies": [
+      {
+        "type": "curator",
+        "name": "Clearstar"
+      },
+      {
+        "type": "protocol_family",
+        "name": "Morpho"
+      },
+      {
+        "type": "issuer",
+        "name": "Circle"
+      }
+    ],
+    "governance_evidence": [
+      "Governance: immutable contracts (https://docs.morpho.org/learn/governance/organization/, checked 2026-10-07)",
+      "Curator: Clearstar · 3-day timelock · sentinel · lends mostly against cbBTC (76%) at up to 86.0% LTV"
+    ],
+    "tvl_change_7d_pct": 66,
+    "apy_change_7d_pct": -14,
+    "why_this_yield_exists": "Yield comes mainly from borrower interest, with a portion from token incentives. The income mix is fairly stable.",
+    "what_could_lose_money": "Main risks are price volatility in held assets, smart contract vulnerabilities in the pool and underlying layers, and oracle accuracy. The position also depends on Circle, and the pool holds a substantial amount of assets.",
+    "what_changed_recently": "TVL +66% over 7 days, APY -14% over 7 days; no risk events this week. Social signals: not yet monitored.",
+    "text_source": "ai",
+    "url": "https://yields.fintechhodl.com/o/097b18e2-9232-4c44-bd2e-502de4ba889e/",
+    "data_url": "https://yields.fintechhodl.com/data/o/097b18e2-9232-4c44-bd2e-502de4ba889e.json"
+  }
+}

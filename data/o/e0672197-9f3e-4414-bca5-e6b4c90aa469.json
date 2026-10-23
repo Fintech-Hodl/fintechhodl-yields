@@ -1,0 +1,74 @@
+{
+  "schema_version": 1,
+  "source": "FinTech Hodl, LLC — Base DeFi risk intel",
+  "network": "base",
+  "as_of": "2026-10-22T15:00:00Z",
+  "captured_at": "2026-10-22T15:49:54.058Z",
+  "delay_hours": 24,
+  "preview": false,
+  "model_version": "1.3.0",
+  "disclaimer": "Risk data only, not investment advice.",
+  "terms": "Free to read and cite with attribution; delayed data for information only. Fresher data is planned as a paid x402 API.",
+  "item": {
+    "id": "e0672197-9f3e-4414-bca5-e6b4c90aa469",
+    "protocol": "morpho-blue",
+    "market": "GTUSDCP",
+    "type": "lending",
+    "apy": 4.73,
+    "sustainable_apy": 4.73,
+    "tvl_usd": 410922381,
+    "risk_score": 16,
+    "opportunity_score": 82,
+    "confidence": 100,
+    "yield_sustainability": 100,
+    "liquidity": "Good",
+    "primary_yield_source": "borrower_interest",
+    "yield_sources": [
+      {
+        "category": "borrower_interest",
+        "apy": 4.73,
+        "share": 1
+      }
+    ],
+    "major_risks": [
+      {
+        "dimension": "oracle",
+        "score": 18
+      },
+      {
+        "dimension": "protocol",
+        "score": 17
+      },
+      {
+        "dimension": "stablecoin",
+        "score": 16
+      }
+    ],
+    "key_dependencies": [
+      {
+        "type": "curator",
+        "name": "Gauntlet"
+      },
+      {
+        "type": "protocol_family",
+        "name": "Morpho"
+      },
+      {
+        "type": "issuer",
+        "name": "Circle"
+      }
+    ],
+    "governance_evidence": [
+      "Governance: immutable contracts (https://docs.morpho.org/learn/governance/organization/, checked 2026-10-07)",
+      "Curator: Gauntlet · 7-day timelock · guardian · lends mostly against cbBTC (91%) at up to 86.0% LTV"
+    ],
+    "tvl_change_7d_pct": -0.8,
+    "apy_change_7d_pct": 0.3,
+    "why_this_yield_exists": "Lenders earn yield from interest paid by borrowers. This income source is highly durable.",
+    "what_could_lose_money": "Main risks include oracle manipulation, the protocol's maturity level, and stablecoin depegging. The market also depends on Circle and Gauntlet's oversight.",
+    "what_changed_recently": "TVL -0.8% over 7 days, APY +0.3% over 7 days; no risk events this week. Social signals: not yet monitored.",
+    "text_source": "ai",
+    "url": "https://yields.fintechhodl.com/o/e0672197-9f3e-4414-bca5-e6b4c90aa469/",
+    "data_url": "https://yields.fintechhodl.com/data/o/e0672197-9f3e-4414-bca5-e6b4c90aa469.json"
+  }
+}

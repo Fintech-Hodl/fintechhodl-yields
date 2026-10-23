@@ -1,7 +1,24 @@
 # FinTech Hodl — Base DeFi yields and risk data
 
-> Data collection has started. Risk data, not investment advice.
-> Machine-readable data (https://yields.fintechhodl.com/data/opportunities.json) will appear here once the first report is published. It does not exist yet.
+> Risk scores, yields and plain-English risk reports for the top 25 Base DeFi opportunities. Risk data only, not investment advice.
+> Free tier, delayed 24 hours. Data as of 2026-10-22T15:00:00Z. Scoring model 1.3.0.
+
+## Machine-readable data
+- [All opportunities (JSON)](https://yields.fintechhodl.com/data/opportunities.json): the 25 rows with scores, yield sources, risks, dependencies and report text.
+- One opportunity (JSON): https://yields.fintechhodl.com/data/o/{id}.json, using the data_url of a row from the list above.
+- [OpenAPI description](https://yields.fintechhodl.com/openapi.json): the shape of these files.
+
+## Human-readable pages
+- [Yields table](https://yields.fintechhodl.com/): sortable table of the 25 opportunities.
+- Per-opportunity report: https://yields.fintechhodl.com/o/{id}/
+
+## How to use it
+- Fields: apy and sustainable_apy are percent per year; tvl_usd is dollars; risk_score is 0-100 (lower is lower modelled risk); opportunity_score is 0-100.
+- Cite the as_of time and model_version. Scores are modelled from public data and can be wrong or stale.
+- Do not present this data as advice, a recommendation or a prediction.
+
+## Fresher or deeper data
+A paid, pay-per-call API (x402, USDC on Base) with fresh scores, full cards, history, dependencies and risk events is planned. It is not available yet.
 
 ## Contact
 https://fintechhodl.com/contact

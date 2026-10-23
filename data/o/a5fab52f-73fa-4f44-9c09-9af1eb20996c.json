@@ -1,0 +1,74 @@
+{
+  "schema_version": 1,
+  "source": "FinTech Hodl, LLC — Base DeFi risk intel",
+  "network": "base",
+  "as_of": "2026-10-22T15:00:00Z",
+  "captured_at": "2026-10-22T15:49:54.058Z",
+  "delay_hours": 24,
+  "preview": false,
+  "model_version": "1.3.0",
+  "disclaimer": "Risk data only, not investment advice.",
+  "terms": "Free to read and cite with attribution; delayed data for information only. Fresher data is planned as a paid x402 API.",
+  "item": {
+    "id": "a5fab52f-73fa-4f44-9c09-9af1eb20996c",
+    "protocol": "morpho-blue",
+    "market": "SPARKUSDC",
+    "type": "lending",
+    "apy": 4.24,
+    "sustainable_apy": 4.24,
+    "tvl_usd": 422228493,
+    "risk_score": 19,
+    "opportunity_score": 76,
+    "confidence": 100,
+    "yield_sustainability": 100,
+    "liquidity": "Good",
+    "primary_yield_source": "borrower_interest",
+    "yield_sources": [
+      {
+        "category": "borrower_interest",
+        "apy": 4.24,
+        "share": 1
+      }
+    ],
+    "major_risks": [
+      {
+        "dimension": "liquidity",
+        "score": 24
+      },
+      {
+        "dimension": "oracle",
+        "score": 18
+      },
+      {
+        "dimension": "protocol",
+        "score": 17
+      }
+    ],
+    "key_dependencies": [
+      {
+        "type": "curator",
+        "name": "SparkDAO"
+      },
+      {
+        "type": "protocol_family",
+        "name": "Morpho"
+      },
+      {
+        "type": "issuer",
+        "name": "Circle"
+      }
+    ],
+    "governance_evidence": [
+      "Governance: immutable contracts (https://docs.morpho.org/learn/governance/organization/, checked 2026-10-07)",
+      "Curator: SparkDAO · 10-day timelock · guardian · lends mostly against cbBTC (100%) at up to 86.0% LTV"
+    ],
+    "tvl_change_7d_pct": -6,
+    "apy_change_7d_pct": -0.1,
+    "why_this_yield_exists": "The yield comes entirely from interest paid by borrowers, and this income source is very stable. ",
+    "what_could_lose_money": "The main risks are liquidity constraints when exiting, potential oracle errors or manipulation, and protocol-level vulnerabilities. The position also depends on Circle as the USDC issuer.",
+    "what_changed_recently": "TVL -6% over 7 days, APY -0.1% over 7 days; no risk events this week. Social signals: not yet monitored.",
+    "text_source": "ai",
+    "url": "https://yields.fintechhodl.com/o/a5fab52f-73fa-4f44-9c09-9af1eb20996c/",
+    "data_url": "https://yields.fintechhodl.com/data/o/a5fab52f-73fa-4f44-9c09-9af1eb20996c.json"
+  }
+}
