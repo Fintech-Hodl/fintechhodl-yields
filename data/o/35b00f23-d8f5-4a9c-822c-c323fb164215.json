@@ -2,23 +2,23 @@
   "schema_version": 1,
   "source": "FinTech Hodl, LLC — Base DeFi risk intel",
   "network": "base",
-  "as_of": "2026-10-22T15:00:00Z",
-  "captured_at": "2026-10-22T15:49:54.058Z",
+  "as_of": "2026-10-23T03:00:00Z",
+  "captured_at": "2026-10-23T03:51:45.935Z",
   "delay_hours": 24,
   "preview": false,
   "model_version": "1.3.0",
   "disclaimer": "Risk data only, not investment advice.",
-  "terms": "Free to read and cite with attribution; delayed data for information only. Fresher data is planned as a paid x402 API.",
+  "terms": "Free to read and cite with attribution; delayed data for information only. Fresh data is available as a paid x402 API (USDC on Base): https://intel.fintechhodl.com/.well-known/x402",
   "item": {
     "id": "35b00f23-d8f5-4a9c-822c-c323fb164215",
     "protocol": "40-acres",
     "market": "40BASE-USDC-VAULT",
     "type": "lending",
-    "apy": 32.1,
-    "sustainable_apy": 32.1,
-    "tvl_usd": 5705834,
-    "risk_score": 42,
-    "opportunity_score": 51,
+    "apy": 33.3,
+    "sustainable_apy": 33.3,
+    "tvl_usd": 5707461,
+    "risk_score": 43,
+    "opportunity_score": 50,
     "confidence": 95,
     "yield_sustainability": 100,
     "liquidity": "Fair",
@@ -26,7 +26,7 @@
     "yield_sources": [
       {
         "category": "borrower_interest",
-        "apy": 32.1,
+        "apy": 33.3,
         "share": 1
       }
     ],
@@ -40,8 +40,8 @@
         "score": 37
       },
       {
-        "dimension": "oracle",
-        "score": 30
+        "dimension": "protocol",
+        "score": 36
       }
     ],
     "key_dependencies": [
@@ -51,11 +51,11 @@
       }
     ],
     "governance_evidence": [],
-    "tvl_change_7d_pct": -4.7,
-    "apy_change_7d_pct": 14.9,
-    "why_this_yield_exists": "Yield comes entirely from interest paid by borrowers. This income source is highly durable.",
-    "what_could_lose_money": "Main risks are yield declining, difficulty exiting quickly or cheaply, and oracle price errors. The position depends on Circle and a relatively modest pool size.",
-    "what_changed_recently": "TVL -4.7% over 7 days, APY +14.9% over 7 days; no risk events this week. Social signals: not yet monitored.",
+    "tvl_change_7d_pct": -4.6,
+    "apy_change_7d_pct": 19.2,
+    "why_this_yield_exists": "Yield comes entirely from interest paid by borrowers. This income source is stable.",
+    "what_could_lose_money": "Main risks are yield declining, difficulty exiting quickly, and protocol-level concerns. The position relies on Circle and operates in a modest-sized pool.",
+    "what_changed_recently": "TVL -4.6% over 7 days, APY +19.2% over 7 days; no risk events this week. Social signals: not yet monitored.",
     "text_source": "ai",
     "url": "https://yields.fintechhodl.com/o/35b00f23-d8f5-4a9c-822c-c323fb164215/",
     "data_url": "https://yields.fintechhodl.com/data/o/35b00f23-d8f5-4a9c-822c-c323fb164215.json"

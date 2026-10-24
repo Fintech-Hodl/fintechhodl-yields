@@ -2,21 +2,21 @@
   "schema_version": 1,
   "source": "FinTech Hodl, LLC — Base DeFi risk intel",
   "network": "base",
-  "as_of": "2026-10-22T15:00:00Z",
-  "captured_at": "2026-10-22T15:49:54.058Z",
+  "as_of": "2026-10-23T03:00:00Z",
+  "captured_at": "2026-10-23T03:51:45.935Z",
   "delay_hours": 24,
   "preview": false,
   "model_version": "1.3.0",
   "disclaimer": "Risk data only, not investment advice.",
-  "terms": "Free to read and cite with attribution; delayed data for information only. Fresher data is planned as a paid x402 API.",
+  "terms": "Free to read and cite with attribution; delayed data for information only. Fresh data is available as a paid x402 API (USDC on Base): https://intel.fintechhodl.com/.well-known/x402",
   "item": {
     "id": "cca340f1-03e7-5097-8d7c-f07def190cc2",
     "protocol": "morpho-blue",
     "market": "K3USDC",
     "type": "lending",
-    "apy": 5.57,
-    "sustainable_apy": 5.57,
-    "tvl_usd": 3696388,
+    "apy": 5.58,
+    "sustainable_apy": 5.58,
+    "tvl_usd": 3698442,
     "risk_score": 39,
     "opportunity_score": 50,
     "confidence": 82,
@@ -26,7 +26,7 @@
     "yield_sources": [
       {
         "category": "borrower_interest",
-        "apy": 5.57,
+        "apy": 5.58,
         "share": 1
       }
     ],
@@ -60,13 +60,13 @@
     ],
     "governance_evidence": [
       "Governance: immutable contracts (https://docs.morpho.org/learn/governance/organization/, checked 2026-10-07)",
-      "Curator: K3 Capital · 3-day timelock · sentinel · lends mostly against cbXRP (96%) at up to 62.5% LTV"
+      "Curator: K3 Capital · 3-day timelock · sentinel · lends mostly against cbXRP (97%) at up to 62.5% LTV"
     ],
-    "tvl_change_7d_pct": 0.1,
-    "apy_change_7d_pct": 4.4,
+    "tvl_change_7d_pct": 0.2,
+    "apy_change_7d_pct": 4.6,
     "why_this_yield_exists": "It pays roughly mid-single-digit APY, entirely from interest paid by borrowers. This income source is stable.",
     "what_could_lose_money": "The main risks are losses from the collateral assets held, liquidity constraints that could make exiting difficult, and smart contract risks in the pool and underlying protocol. The position depends on Circle, and the pool holds moderate total value.",
-    "what_changed_recently": "TVL +0.1% over 7 days, APY +4.4% over 7 days; 1 risk event this week (vault_new_collateral). Social signals: not yet monitored.",
+    "what_changed_recently": "TVL +0.2% over 7 days, APY +4.6% over 7 days; 1 risk event this week (vault_new_collateral). Social signals: not yet monitored.",
     "text_source": "ai",
     "url": "https://yields.fintechhodl.com/o/cca340f1-03e7-5097-8d7c-f07def190cc2/",
     "data_url": "https://yields.fintechhodl.com/data/o/cca340f1-03e7-5097-8d7c-f07def190cc2.json"

@@ -2,21 +2,21 @@
   "schema_version": 1,
   "source": "FinTech Hodl, LLC — Base DeFi risk intel",
   "network": "base",
-  "as_of": "2026-10-22T15:00:00Z",
-  "captured_at": "2026-10-22T15:49:54.058Z",
+  "as_of": "2026-10-23T03:00:00Z",
+  "captured_at": "2026-10-23T03:51:45.935Z",
   "delay_hours": 24,
   "preview": false,
   "model_version": "1.3.0",
   "disclaimer": "Risk data only, not investment advice.",
-  "terms": "Free to read and cite with attribution; delayed data for information only. Fresher data is planned as a paid x402 API.",
+  "terms": "Free to read and cite with attribution; delayed data for information only. Fresh data is available as a paid x402 API (USDC on Base): https://intel.fintechhodl.com/.well-known/x402",
   "item": {
     "id": "df7ccfd1-2642-4d79-851a-a5b07d9b8a97",
     "protocol": "morpho-blue",
     "market": "GTUSDCP",
     "type": "lending",
-    "apy": 4.73,
-    "sustainable_apy": 4.73,
-    "tvl_usd": 170782348,
+    "apy": 4.72,
+    "sustainable_apy": 4.72,
+    "tvl_usd": 169887438,
     "risk_score": 24,
     "opportunity_score": 71,
     "confidence": 100,
@@ -26,7 +26,7 @@
     "yield_sources": [
       {
         "category": "borrower_interest",
-        "apy": 4.73,
+        "apy": 4.72,
         "share": 1
       }
     ],
@@ -37,7 +37,7 @@
       },
       {
         "dimension": "liquidity",
-        "score": 29
+        "score": 30
       },
       {
         "dimension": "oracle",
@@ -60,13 +60,13 @@
     ],
     "governance_evidence": [
       "Governance: immutable contracts (https://docs.morpho.org/learn/governance/organization/, checked 2026-10-07)",
-      "Curator: Gauntlet · 3-day timelock · sentinel · lends mostly against cbBTC (94%) at up to 86.0% LTV"
+      "Curator: Gauntlet · 3-day timelock · sentinel · lends mostly against cbBTC (93%) at up to 86.0% LTV"
     ],
-    "tvl_change_7d_pct": -9.3,
-    "apy_change_7d_pct": -0.1,
+    "tvl_change_7d_pct": -9.8,
+    "apy_change_7d_pct": -0.3,
     "why_this_yield_exists": "Yields come entirely from interest paid by borrowers, offering stable income with high durability.",
     "what_could_lose_money": "Main risks are yield decline, liquidity constraints, and oracle vulnerabilities. The market depends on Circle and currently holds substantial assets.",
-    "what_changed_recently": "TVL -9.3% over 7 days, APY -0.1% over 7 days; no risk events this week. Social signals: not yet monitored.",
+    "what_changed_recently": "TVL -9.8% over 7 days, APY -0.3% over 7 days; no risk events this week. Social signals: not yet monitored.",
     "text_source": "ai",
     "url": "https://yields.fintechhodl.com/o/df7ccfd1-2642-4d79-851a-a5b07d9b8a97/",
     "data_url": "https://yields.fintechhodl.com/data/o/df7ccfd1-2642-4d79-851a-a5b07d9b8a97.json"

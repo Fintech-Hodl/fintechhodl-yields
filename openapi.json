@@ -1,9 +1,9 @@
 {
   "openapi": "3.1.0",
   "info": {
-    "title": "FinTech Hodl Base DeFi yield and risk data (free, delayed)",
-    "version": "1",
-    "description": "Risk data only, not investment advice. Static JSON files, refreshed hourly and delayed."
+    "title": "FinTech Hodl Base DeFi yield and risk data",
+    "version": "2",
+    "description": "Risk data only, not investment advice. Free: static JSON files on this site, refreshed hourly and delayed. Paid: the live API at https://intel.fintechhodl.com, per call with x402 (USDC on Base); prices at https://intel.fintechhodl.com/.well-known/x402."
   },
   "servers": [
     {
@@ -279,6 +279,528 @@
           },
           "404": {
             "description": "Unknown id"
+          }
+        }
+      }
+    },
+    "/.well-known/x402": {
+      "servers": [
+        {
+          "url": "https://intel.fintechhodl.com"
+        }
+      ],
+      "get": {
+        "summary": "Every API route with its x402 price",
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object"
+                }
+              }
+            }
+          },
+          "429": {
+            "description": "Free-route limit reached (60 calls an hour per client)"
+          }
+        }
+      }
+    },
+    "/api/v1/opportunities": {
+      "servers": [
+        {
+          "url": "https://intel.fintechhodl.com"
+        }
+      ],
+      "get": {
+        "summary": "Search and filter all tracked Base opportunities",
+        "parameters": [
+          {
+            "name": "q",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "type": "string"
+            },
+            "description": "Text search"
+          },
+          {
+            "name": "type",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "type": "string"
+            },
+            "description": "Opportunity type"
+          },
+          {
+            "name": "asset",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "type": "string"
+            },
+            "description": "Asset symbol"
+          },
+          {
+            "name": "risk_max",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "type": "number"
+            },
+            "description": "Highest risk score, 0-100"
+          },
+          {
+            "name": "min_apy",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "type": "number"
+            },
+            "description": "Lowest APY, percent"
+          },
+          {
+            "name": "limit",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "type": "integer"
+            },
+            "description": "At most 100"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object"
+                }
+              }
+            }
+          },
+          "429": {
+            "description": "Free-route limit reached (60 calls an hour per client)"
+          }
+        }
+      }
+    },
+    "/api/v1/opportunity/{id}": {
+      "servers": [
+        {
+          "url": "https://intel.fintechhodl.com"
+        }
+      ],
+      "get": {
+        "summary": "Full risk card for one opportunity",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            },
+            "description": "An opportunity id, as listed by /api/v1/opportunities"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK; the PAYMENT-RESPONSE header carries the settlement receipt",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object"
+                }
+              }
+            }
+          },
+          "402": {
+            "description": "Payment required: the PAYMENT-REQUIRED header holds the x402 challenge (price, USDC on Base, pay-to address). Pay and repeat the request."
+          },
+          "503": {
+            "description": "Data is refreshing; nothing is charged"
+          }
+        }
+      }
+    },
+    "/api/v1/opportunity-score/{id}": {
+      "servers": [
+        {
+          "url": "https://intel.fintechhodl.com"
+        }
+      ],
+      "get": {
+        "summary": "Scoring breakdown for one opportunity",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            },
+            "description": "An opportunity id, as listed by /api/v1/opportunities"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK; the PAYMENT-RESPONSE header carries the settlement receipt",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object"
+                }
+              }
+            }
+          },
+          "402": {
+            "description": "Payment required: the PAYMENT-REQUIRED header holds the x402 challenge (price, USDC on Base, pay-to address). Pay and repeat the request."
+          },
+          "503": {
+            "description": "Data is refreshing; nothing is charged"
+          }
+        }
+      }
+    },
+    "/api/v1/history/{id}": {
+      "servers": [
+        {
+          "url": "https://intel.fintechhodl.com"
+        }
+      ],
+      "get": {
+        "summary": "Daily APY, TVL and score history of one opportunity",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            },
+            "description": "An opportunity id, as listed by /api/v1/opportunities"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK; the PAYMENT-RESPONSE header carries the settlement receipt",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object"
+                }
+              }
+            }
+          },
+          "402": {
+            "description": "Payment required: the PAYMENT-REQUIRED header holds the x402 challenge (price, USDC on Base, pay-to address). Pay and repeat the request."
+          },
+          "503": {
+            "description": "Data is refreshing; nothing is charged"
+          }
+        }
+      }
+    },
+    "/api/v1/dependency-graph/{id}": {
+      "servers": [
+        {
+          "url": "https://intel.fintechhodl.com"
+        }
+      ],
+      "get": {
+        "summary": "What one opportunity depends on",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            },
+            "description": "An opportunity id, as listed by /api/v1/opportunities"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK; the PAYMENT-RESPONSE header carries the settlement receipt",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object"
+                }
+              }
+            }
+          },
+          "402": {
+            "description": "Payment required: the PAYMENT-REQUIRED header holds the x402 challenge (price, USDC on Base, pay-to address). Pay and repeat the request."
+          },
+          "503": {
+            "description": "Data is refreshing; nothing is charged"
+          }
+        }
+      }
+    },
+    "/api/v1/closure/{entity}": {
+      "servers": [
+        {
+          "url": "https://intel.fintechhodl.com"
+        }
+      ],
+      "get": {
+        "summary": "Everything an entity depends on, transitively",
+        "parameters": [
+          {
+            "name": "entity",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            },
+            "description": "An entity id, for example protocol:morpho-blue"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK; the PAYMENT-RESPONSE header carries the settlement receipt",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object"
+                }
+              }
+            }
+          },
+          "402": {
+            "description": "Payment required: the PAYMENT-REQUIRED header holds the x402 challenge (price, USDC on Base, pay-to address). Pay and repeat the request."
+          },
+          "503": {
+            "description": "Data is refreshing; nothing is charged"
+          }
+        }
+      }
+    },
+    "/api/v1/dependents/{entity}": {
+      "servers": [
+        {
+          "url": "https://intel.fintechhodl.com"
+        }
+      ],
+      "get": {
+        "summary": "Which tracked opportunities depend on an entity",
+        "parameters": [
+          {
+            "name": "entity",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            },
+            "description": "An entity id, for example protocol:morpho-blue"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK; the PAYMENT-RESPONSE header carries the settlement receipt",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object"
+                }
+              }
+            }
+          },
+          "402": {
+            "description": "Payment required: the PAYMENT-REQUIRED header holds the x402 challenge (price, USDC on Base, pay-to address). Pay and repeat the request."
+          },
+          "503": {
+            "description": "Data is refreshing; nothing is charged"
+          }
+        }
+      }
+    },
+    "/api/v1/yield-premium": {
+      "servers": [
+        {
+          "url": "https://intel.fintechhodl.com"
+        }
+      ],
+      "get": {
+        "summary": "Why one opportunity pays more than a reference",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "query",
+            "required": true,
+            "schema": {
+              "type": "string"
+            },
+            "description": "The opportunity id"
+          },
+          {
+            "name": "benchmark",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "type": "string"
+            },
+            "description": "Reference opportunity id; a low-risk lending market by default"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK; the PAYMENT-RESPONSE header carries the settlement receipt",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object"
+                }
+              }
+            }
+          },
+          "402": {
+            "description": "Payment required: the PAYMENT-REQUIRED header holds the x402 challenge (price, USDC on Base, pay-to address). Pay and repeat the request."
+          },
+          "503": {
+            "description": "Data is refreshing; nothing is charged"
+          }
+        }
+      }
+    },
+    "/api/v1/protocol-risk/{slug}": {
+      "servers": [
+        {
+          "url": "https://intel.fintechhodl.com"
+        }
+      ],
+      "get": {
+        "summary": "Risk profile of one protocol on Base",
+        "parameters": [
+          {
+            "name": "slug",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            },
+            "description": "Protocol slug, for example morpho-blue"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK; the PAYMENT-RESPONSE header carries the settlement receipt",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object"
+                }
+              }
+            }
+          },
+          "402": {
+            "description": "Payment required: the PAYMENT-REQUIRED header holds the x402 challenge (price, USDC on Base, pay-to address). Pay and repeat the request."
+          },
+          "503": {
+            "description": "Data is refreshing; nothing is charged"
+          }
+        }
+      }
+    },
+    "/api/v1/stablecoin-risk/{symbol}": {
+      "servers": [
+        {
+          "url": "https://intel.fintechhodl.com"
+        }
+      ],
+      "get": {
+        "summary": "Peg and supply risk of one stablecoin on Base",
+        "parameters": [
+          {
+            "name": "symbol",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            },
+            "description": "Stablecoin symbol, for example USDC"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK; the PAYMENT-RESPONSE header carries the settlement receipt",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object"
+                }
+              }
+            }
+          },
+          "402": {
+            "description": "Payment required: the PAYMENT-REQUIRED header holds the x402 challenge (price, USDC on Base, pay-to address). Pay and repeat the request."
+          },
+          "503": {
+            "description": "Data is refreshing; nothing is charged"
+          }
+        }
+      }
+    },
+    "/api/v1/risk-events": {
+      "servers": [
+        {
+          "url": "https://intel.fintechhodl.com"
+        }
+      ],
+      "get": {
+        "summary": "Recent risk events on Base DeFi",
+        "responses": {
+          "200": {
+            "description": "OK; the PAYMENT-RESPONSE header carries the settlement receipt",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object"
+                }
+              }
+            }
+          },
+          "402": {
+            "description": "Payment required: the PAYMENT-REQUIRED header holds the x402 challenge (price, USDC on Base, pay-to address). Pay and repeat the request."
+          },
+          "503": {
+            "description": "Data is refreshing; nothing is charged"
+          }
+        }
+      }
+    },
+    "/api/v1/incidents": {
+      "servers": [
+        {
+          "url": "https://intel.fintechhodl.com"
+        }
+      ],
+      "get": {
+        "summary": "Labelled incidents affecting Base protocols and stablecoins",
+        "responses": {
+          "200": {
+            "description": "OK; the PAYMENT-RESPONSE header carries the settlement receipt",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object"
+                }
+              }
+            }
+          },
+          "402": {
+            "description": "Payment required: the PAYMENT-REQUIRED header holds the x402 challenge (price, USDC on Base, pay-to address). Pay and repeat the request."
+          },
+          "503": {
+            "description": "Data is refreshing; nothing is charged"
           }
         }
       }
