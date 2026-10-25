@@ -2,8 +2,8 @@
   "schema_version": 1,
   "source": "FinTech Hodl, LLC — Base DeFi risk intel",
   "network": "base",
-  "as_of": "2026-10-23T03:00:00Z",
-  "captured_at": "2026-10-23T03:51:45.935Z",
+  "as_of": "2026-10-24T05:00:00Z",
+  "captured_at": "2026-10-24T05:20:00.134Z",
   "delay_hours": 24,
   "preview": false,
   "model_version": "1.3.0",
@@ -16,9 +16,9 @@
       "protocol": "morpho-blue",
       "market": "GTUSDCP",
       "type": "lending",
-      "apy": 4.72,
-      "sustainable_apy": 4.72,
-      "tvl_usd": 410047219,
+      "apy": 4.71,
+      "sustainable_apy": 4.71,
+      "tvl_usd": 410662754,
       "risk_score": 16,
       "opportunity_score": 82,
       "confidence": 100,
@@ -28,7 +28,7 @@
       "yield_sources": [
         {
           "category": "borrower_interest",
-          "apy": 4.72,
+          "apy": 4.71,
           "share": 1
         }
       ],
@@ -64,11 +64,11 @@
         "Governance: immutable contracts (https://docs.morpho.org/learn/governance/organization/, checked 2026-10-07)",
         "Curator: Gauntlet · 7-day timelock · guardian · lends mostly against cbBTC (91%) at up to 86.0% LTV"
       ],
-      "tvl_change_7d_pct": -1,
-      "apy_change_7d_pct": 0.1,
+      "tvl_change_7d_pct": -0.6,
+      "apy_change_7d_pct": -1,
       "why_this_yield_exists": "Lenders earn yield from interest paid by borrowers. This income source is highly durable.",
       "what_could_lose_money": "Main risks include oracle manipulation, the protocol's maturity level, and stablecoin depegging. The market also depends on Circle and Gauntlet's oversight.",
-      "what_changed_recently": "TVL -1% over 7 days, APY +0.1% over 7 days; no risk events this week. Social signals: not yet monitored.",
+      "what_changed_recently": "TVL -0.6% over 7 days, APY -1% over 7 days; no risk events this week. Social signals: not yet monitored.",
       "text_source": "ai",
       "url": "https://yields.fintechhodl.com/o/e0672197-9f3e-4414-bca5-e6b4c90aa469/",
       "data_url": "https://yields.fintechhodl.com/data/o/e0672197-9f3e-4414-bca5-e6b4c90aa469.json"
@@ -78,9 +78,9 @@
       "protocol": "morpho-blue",
       "market": "STEAKUSDC",
       "type": "lending",
-      "apy": 3.52,
-      "sustainable_apy": 3.52,
-      "tvl_usd": 116229743,
+      "apy": 3.51,
+      "sustainable_apy": 3.51,
+      "tvl_usd": 116144132,
       "risk_score": 17,
       "opportunity_score": 76,
       "confidence": 100,
@@ -90,14 +90,14 @@
       "yield_sources": [
         {
           "category": "borrower_interest",
-          "apy": 3.52,
+          "apy": 3.51,
           "share": 1
         }
       ],
       "major_risks": [
         {
           "dimension": "liquidity",
-          "score": 20
+          "score": 21
         },
         {
           "dimension": "oracle",
@@ -126,95 +126,33 @@
         "Governance: immutable contracts (https://docs.morpho.org/learn/governance/organization/, checked 2026-10-07)",
         "Curator: Steakhouse Financial · 7-day timelock · guardian · lends mostly against cbBTC (97%) at up to 86.0% LTV"
       ],
-      "tvl_change_7d_pct": -3.7,
-      "apy_change_7d_pct": 0.1,
+      "tvl_change_7d_pct": -4,
+      "apy_change_7d_pct": -0.9,
       "why_this_yield_exists": "Yield comes entirely from borrowers paying interest at a steady rate. This income source is very durable.",
       "what_could_lose_money": "Main risks are limited exit liquidity, potential oracle failures, and protocol maturity. The position also depends on Circle and Steakhouse Financial.",
-      "what_changed_recently": "TVL -3.7% over 7 days, APY +0.1% over 7 days; no risk events this week. Social signals: not yet monitored.",
+      "what_changed_recently": "TVL -4% over 7 days, APY -0.9% over 7 days; no risk events this week. Social signals: not yet monitored.",
       "text_source": "ai",
       "url": "https://yields.fintechhodl.com/o/81ae8812-f04f-4f6e-9d71-ee5778f3a178/",
       "data_url": "https://yields.fintechhodl.com/data/o/81ae8812-f04f-4f6e-9d71-ee5778f3a178.json"
-    },
-    {
-      "id": "a5fab52f-73fa-4f44-9c09-9af1eb20996c",
-      "protocol": "morpho-blue",
-      "market": "SPARKUSDC",
-      "type": "lending",
-      "apy": 4.24,
-      "sustainable_apy": 4.24,
-      "tvl_usd": 419670504,
-      "risk_score": 19,
-      "opportunity_score": 76,
-      "confidence": 100,
-      "yield_sustainability": 100,
-      "liquidity": "Good",
-      "primary_yield_source": "borrower_interest",
-      "yield_sources": [
-        {
-          "category": "borrower_interest",
-          "apy": 4.24,
-          "share": 1
-        }
-      ],
-      "major_risks": [
-        {
-          "dimension": "liquidity",
-          "score": 24
-        },
-        {
-          "dimension": "oracle",
-          "score": 18
-        },
-        {
-          "dimension": "protocol",
-          "score": 17
-        }
-      ],
-      "key_dependencies": [
-        {
-          "type": "curator",
-          "name": "SparkDAO"
-        },
-        {
-          "type": "protocol_family",
-          "name": "Morpho"
-        },
-        {
-          "type": "issuer",
-          "name": "Circle"
-        }
-      ],
-      "governance_evidence": [
-        "Governance: immutable contracts (https://docs.morpho.org/learn/governance/organization/, checked 2026-10-07)",
-        "Curator: SparkDAO · 10-day timelock · guardian · lends mostly against cbBTC (100%) at up to 86.0% LTV"
-      ],
-      "tvl_change_7d_pct": -6.6,
-      "apy_change_7d_pct": -0.2,
-      "why_this_yield_exists": "The yield comes entirely from interest paid by borrowers, and this income source is very stable. ",
-      "what_could_lose_money": "The main risks are liquidity constraints when exiting, potential oracle errors or manipulation, and protocol-level vulnerabilities. The position also depends on Circle as the USDC issuer.",
-      "what_changed_recently": "TVL -6.6% over 7 days, APY -0.2% over 7 days; no risk events this week. Social signals: not yet monitored.",
-      "text_source": "ai",
-      "url": "https://yields.fintechhodl.com/o/a5fab52f-73fa-4f44-9c09-9af1eb20996c/",
-      "data_url": "https://yields.fintechhodl.com/data/o/a5fab52f-73fa-4f44-9c09-9af1eb20996c.json"
     },
     {
       "id": "df7ccfd1-2642-4d79-851a-a5b07d9b8a97",
       "protocol": "morpho-blue",
       "market": "GTUSDCP",
       "type": "lending",
-      "apy": 4.72,
-      "sustainable_apy": 4.72,
-      "tvl_usd": 169887438,
-      "risk_score": 24,
-      "opportunity_score": 71,
+      "apy": 4.71,
+      "sustainable_apy": 4.71,
+      "tvl_usd": 167325747,
+      "risk_score": 23,
+      "opportunity_score": 72,
       "confidence": 100,
       "yield_sustainability": 100,
-      "liquidity": "Good",
+      "liquidity": "Excellent",
       "primary_yield_source": "borrower_interest",
       "yield_sources": [
         {
           "category": "borrower_interest",
-          "apy": 4.72,
+          "apy": 4.71,
           "share": 1
         }
       ],
@@ -224,12 +162,12 @@
           "score": 31
         },
         {
-          "dimension": "liquidity",
-          "score": 30
-        },
-        {
           "dimension": "oracle",
           "score": 18
+        },
+        {
+          "dimension": "protocol",
+          "score": 17
         }
       ],
       "key_dependencies": [
@@ -250,23 +188,85 @@
         "Governance: immutable contracts (https://docs.morpho.org/learn/governance/organization/, checked 2026-10-07)",
         "Curator: Gauntlet · 3-day timelock · sentinel · lends mostly against cbBTC (93%) at up to 86.0% LTV"
       ],
-      "tvl_change_7d_pct": -9.8,
-      "apy_change_7d_pct": -0.3,
-      "why_this_yield_exists": "Yields come entirely from interest paid by borrowers, offering stable income with high durability.",
-      "what_could_lose_money": "Main risks are yield decline, liquidity constraints, and oracle vulnerabilities. The market depends on Circle and currently holds substantial assets.",
-      "what_changed_recently": "TVL -9.8% over 7 days, APY -0.3% over 7 days; no risk events this week. Social signals: not yet monitored.",
+      "tvl_change_7d_pct": 0.3,
+      "apy_change_7d_pct": -0.8,
+      "why_this_yield_exists": "Yield comes entirely from interest that borrowers pay. This income source is highly durable.",
+      "what_could_lose_money": "Main risks are yield decline, oracle errors or manipulation, and protocol vulnerabilities. The position depends on Circle and Morpho.",
+      "what_changed_recently": "TVL +0.3% over 7 days, APY -0.8% over 7 days; no risk events this week. Social signals: not yet monitored.",
       "text_source": "ai",
       "url": "https://yields.fintechhodl.com/o/df7ccfd1-2642-4d79-851a-a5b07d9b8a97/",
       "data_url": "https://yields.fintechhodl.com/data/o/df7ccfd1-2642-4d79-851a-a5b07d9b8a97.json"
+    },
+    {
+      "id": "ba68527f-8ec2-4c55-827a-8f4673ae047c",
+      "protocol": "morpho-blue",
+      "market": "STEAKUSDC",
+      "type": "lending",
+      "apy": 4.71,
+      "sustainable_apy": 4.71,
+      "tvl_usd": 146081092,
+      "risk_score": 23,
+      "opportunity_score": 72,
+      "confidence": 100,
+      "yield_sustainability": 100,
+      "liquidity": "Good",
+      "primary_yield_source": "borrower_interest",
+      "yield_sources": [
+        {
+          "category": "borrower_interest",
+          "apy": 4.71,
+          "share": 1
+        }
+      ],
+      "major_risks": [
+        {
+          "dimension": "yield",
+          "score": 31
+        },
+        {
+          "dimension": "liquidity",
+          "score": 18
+        },
+        {
+          "dimension": "oracle",
+          "score": 18
+        }
+      ],
+      "key_dependencies": [
+        {
+          "type": "curator",
+          "name": "Steakhouse Financial"
+        },
+        {
+          "type": "protocol_family",
+          "name": "Morpho"
+        },
+        {
+          "type": "issuer",
+          "name": "Circle"
+        }
+      ],
+      "governance_evidence": [
+        "Governance: immutable contracts (https://docs.morpho.org/learn/governance/organization/, checked 2026-10-07)",
+        "Curator: Steakhouse Financial · 7-day timelock · sentinel · lends mostly against cbBTC (92%) at up to 86.0% LTV"
+      ],
+      "tvl_change_7d_pct": -1.9,
+      "apy_change_7d_pct": -0.8,
+      "why_this_yield_exists": "Yield comes entirely from interest paid by borrowers. This income source is highly durable.",
+      "what_could_lose_money": "Main risks are yield declining, difficulty exiting the position, and oracle price manipulation. The position also relies on Circle and the pool's current size.",
+      "what_changed_recently": "TVL -1.9% over 7 days, APY -0.8% over 7 days; no risk events this week. Social signals: not yet monitored.",
+      "text_source": "ai",
+      "url": "https://yields.fintechhodl.com/o/ba68527f-8ec2-4c55-827a-8f4673ae047c/",
+      "data_url": "https://yields.fintechhodl.com/data/o/ba68527f-8ec2-4c55-827a-8f4673ae047c.json"
     },
     {
       "id": "097b18e2-9232-4c44-bd2e-502de4ba889e",
       "protocol": "morpho-blue",
       "market": "CSCBUSDC",
       "type": "lending",
-      "apy": 5.3,
-      "sustainable_apy": 4.41,
-      "tvl_usd": 62546386,
+      "apy": 5.29,
+      "sustainable_apy": 4.4,
+      "tvl_usd": 62097901,
       "risk_score": 20,
       "opportunity_score": 70,
       "confidence": 100,
@@ -276,13 +276,13 @@
       "yield_sources": [
         {
           "category": "borrower_interest",
-          "apy": 4.12,
-          "share": 0.778
+          "apy": 4.11,
+          "share": 0.776
         },
         {
           "category": "token_incentives",
           "apy": 1.18,
-          "share": 0.222
+          "share": 0.224
         }
       ],
       "major_risks": [
@@ -317,11 +317,11 @@
         "Governance: immutable contracts (https://docs.morpho.org/learn/governance/organization/, checked 2026-10-07)",
         "Curator: Clearstar · 3-day timelock · sentinel · lends mostly against cbBTC (75%) at up to 86.0% LTV"
       ],
-      "tvl_change_7d_pct": 65.2,
-      "apy_change_7d_pct": -13.8,
+      "tvl_change_7d_pct": 71.5,
+      "apy_change_7d_pct": -11.7,
       "why_this_yield_exists": "The yield comes mostly from interest paid by borrowers, with a smaller portion from token incentives. This income source is reasonably durable.",
       "what_could_lose_money": "The main risks involve the collateral tokens losing value, the underlying smart contracts, and the oracle prices being unreliable. It depends on Circle and the Morpho protocol.",
-      "what_changed_recently": "TVL +65.2% over 7 days, APY -13.8% over 7 days; no risk events this week. Social signals: not yet monitored.",
+      "what_changed_recently": "TVL +71.5% over 7 days, APY -11.7% over 7 days; no risk events this week. Social signals: not yet monitored.",
       "text_source": "ai",
       "url": "https://yields.fintechhodl.com/o/097b18e2-9232-4c44-bd2e-502de4ba889e/",
       "data_url": "https://yields.fintechhodl.com/data/o/097b18e2-9232-4c44-bd2e-502de4ba889e.json"
@@ -331,30 +331,30 @@
       "protocol": "morpho-blue",
       "market": "STEAKUSDC",
       "type": "lending",
-      "apy": 4.49,
-      "sustainable_apy": 4.49,
-      "tvl_usd": 12718649,
+      "apy": 4.47,
+      "sustainable_apy": 4.47,
+      "tvl_usd": 12672795,
       "risk_score": 24,
       "opportunity_score": 70,
       "confidence": 100,
       "yield_sustainability": 100,
-      "liquidity": "Fair",
+      "liquidity": "Good",
       "primary_yield_source": "borrower_interest",
       "yield_sources": [
         {
           "category": "borrower_interest",
-          "apy": 4.49,
+          "apy": 4.47,
           "share": 1
         }
       ],
       "major_risks": [
         {
-          "dimension": "liquidity",
+          "dimension": "yield",
           "score": 31
         },
         {
-          "dimension": "yield",
-          "score": 31
+          "dimension": "liquidity",
+          "score": 29
         },
         {
           "dimension": "oracle",
@@ -377,27 +377,27 @@
       ],
       "governance_evidence": [
         "Governance: immutable contracts (https://docs.morpho.org/learn/governance/organization/, checked 2026-10-07)",
-        "Curator: Steakhouse Financial · 7-day timelock · guardian · largest collateral WETH (44%) at up to 86.0% LTV"
+        "Curator: Steakhouse Financial · 7-day timelock · guardian · largest collateral WETH (40%) at up to 86.0% LTV"
       ],
-      "tvl_change_7d_pct": -3.8,
-      "apy_change_7d_pct": 0.2,
-      "why_this_yield_exists": "It pays yield entirely from interest paid by borrowers. This income source is highly durable.",
-      "what_could_lose_money": "The main risks are difficulty exiting the position quickly, yield declining, and oracle failures. It depends on Circle and Steakhouse Financial's curation.",
-      "what_changed_recently": "TVL -3.8% over 7 days, APY +0.2% over 7 days; no risk events this week. Social signals: not yet monitored.",
+      "tvl_change_7d_pct": -0.7,
+      "apy_change_7d_pct": -1.2,
+      "why_this_yield_exists": "It pays interest from borrowers at a sustainable rate. The yield source is highly durable.",
+      "what_could_lose_money": "The main risks are yield falling, difficulty exiting the position quickly, and oracle price errors. It depends on Circle and the Morpho protocol. The pool's size is modest.",
+      "what_changed_recently": "TVL -0.7% over 7 days, APY -1.2% over 7 days; no risk events this week. Social signals: not yet monitored.",
       "text_source": "ai",
       "url": "https://yields.fintechhodl.com/o/7820bd3c-461a-4811-9f0b-1d39c1503c3f/",
       "data_url": "https://yields.fintechhodl.com/data/o/7820bd3c-461a-4811-9f0b-1d39c1503c3f.json"
     },
     {
-      "id": "ba68527f-8ec2-4c55-827a-8f4673ae047c",
+      "id": "a5fab52f-73fa-4f44-9c09-9af1eb20996c",
       "protocol": "morpho-blue",
-      "market": "STEAKUSDC",
+      "market": "SPARKUSDC",
       "type": "lending",
-      "apy": 4.72,
-      "sustainable_apy": 4.72,
-      "tvl_usd": 145939440,
-      "risk_score": 30,
-      "opportunity_score": 63,
+      "apy": 4.23,
+      "sustainable_apy": 4.23,
+      "tvl_usd": 424094696,
+      "risk_score": 24,
+      "opportunity_score": 69,
       "confidence": 100,
       "yield_sustainability": 100,
       "liquidity": "Fair",
@@ -405,28 +405,28 @@
       "yield_sources": [
         {
           "category": "borrower_interest",
-          "apy": 4.72,
+          "apy": 4.23,
           "share": 1
         }
       ],
       "major_risks": [
         {
           "dimension": "liquidity",
-          "score": 43
-        },
-        {
-          "dimension": "yield",
-          "score": 31
+          "score": 35
         },
         {
           "dimension": "oracle",
           "score": 18
+        },
+        {
+          "dimension": "protocol",
+          "score": 17
         }
       ],
       "key_dependencies": [
         {
           "type": "curator",
-          "name": "Steakhouse Financial"
+          "name": "SparkDAO"
         },
         {
           "type": "protocol_family",
@@ -439,25 +439,25 @@
       ],
       "governance_evidence": [
         "Governance: immutable contracts (https://docs.morpho.org/learn/governance/organization/, checked 2026-10-07)",
-        "Curator: Steakhouse Financial · 7-day timelock · sentinel · lends mostly against cbBTC (92%) at up to 86.0% LTV"
+        "Curator: SparkDAO · 10-day timelock · guardian · lends mostly against cbBTC (100%) at up to 86.0% LTV"
       ],
-      "tvl_change_7d_pct": -20.1,
-      "apy_change_7d_pct": -0.3,
-      "why_this_yield_exists": "Yield comes entirely from interest paid by borrowers. This income source is highly durable.",
-      "what_could_lose_money": "Main risks are limited liquidity for exiting positions, declining yield, and oracle reliability. The position also depends on Circle and Steakhouse Financial's curation.",
-      "what_changed_recently": "TVL -20.1% over 7 days, APY -0.3% over 7 days; no risk events this week. Social signals: not yet monitored.",
+      "tvl_change_7d_pct": -14.1,
+      "apy_change_7d_pct": -0.9,
+      "why_this_yield_exists": "The yield comes entirely from borrower interest, paid at a steady rate. This income source is highly durable.",
+      "what_could_lose_money": "The main risk is liquidity: withdrawals may be slow or costly. The oracle determining asset prices carries moderate risk. Protocol maturity and audit history present some risk. The position also depends on Circle and Morpho.",
+      "what_changed_recently": "TVL -14.1% over 7 days, APY -0.9% over 7 days; no risk events this week. Social signals: not yet monitored.",
       "text_source": "ai",
-      "url": "https://yields.fintechhodl.com/o/ba68527f-8ec2-4c55-827a-8f4673ae047c/",
-      "data_url": "https://yields.fintechhodl.com/data/o/ba68527f-8ec2-4c55-827a-8f4673ae047c.json"
+      "url": "https://yields.fintechhodl.com/o/a5fab52f-73fa-4f44-9c09-9af1eb20996c/",
+      "data_url": "https://yields.fintechhodl.com/data/o/a5fab52f-73fa-4f44-9c09-9af1eb20996c.json"
     },
     {
       "id": "92a97f48-005e-4819-a838-f442ea92c401",
       "protocol": "morpho-blue",
       "market": "GTUSDCF",
       "type": "lending",
-      "apy": 5.53,
-      "sustainable_apy": 5.53,
-      "tvl_usd": 5185796,
+      "apy": 5.46,
+      "sustainable_apy": 5.46,
+      "tvl_usd": 5075140,
       "risk_score": 31,
       "opportunity_score": 63,
       "confidence": 100,
@@ -467,7 +467,7 @@
       "yield_sources": [
         {
           "category": "borrower_interest",
-          "apy": 5.53,
+          "apy": 5.46,
           "share": 1
         }
       ],
@@ -482,7 +482,7 @@
         },
         {
           "dimension": "oracle",
-          "score": 19
+          "score": 20
         }
       ],
       "key_dependencies": [
@@ -503,76 +503,23 @@
         "Governance: immutable contracts (https://docs.morpho.org/learn/governance/organization/, checked 2026-10-07)",
         "Curator: Gauntlet · 3-day timelock · sentinel · largest collateral cbXRP (33%) at up to 86.0% LTV"
       ],
-      "tvl_change_7d_pct": 13.8,
-      "apy_change_7d_pct": -6.1,
+      "tvl_change_7d_pct": 8.9,
+      "apy_change_7d_pct": -3.6,
       "why_this_yield_exists": "Yield comes entirely from interest paid by borrowers, and this income source is highly durable.",
       "what_could_lose_money": "Main risks are price swings in the collateral tokens, difficulty exiting quickly, and oracle accuracy. The position relies on Circle and Gauntlet.",
-      "what_changed_recently": "TVL +13.8% over 7 days, APY -6.1% over 7 days; no risk events this week. Social signals: not yet monitored.",
+      "what_changed_recently": "TVL +8.9% over 7 days, APY -3.6% over 7 days; no risk events this week. Social signals: not yet monitored.",
       "text_source": "ai",
       "url": "https://yields.fintechhodl.com/o/92a97f48-005e-4819-a838-f442ea92c401/",
       "data_url": "https://yields.fintechhodl.com/data/o/92a97f48-005e-4819-a838-f442ea92c401.json"
-    },
-    {
-      "id": "1994cc35-a2b9-434e-b197-df6742fb5d81",
-      "protocol": "yo-protocol",
-      "market": "USDC",
-      "type": "vault",
-      "apy": 5.03,
-      "sustainable_apy": 5.03,
-      "tvl_usd": 7724491,
-      "risk_score": 28,
-      "opportunity_score": 62,
-      "confidence": 100,
-      "yield_sustainability": 100,
-      "liquidity": "Fair",
-      "primary_yield_source": "borrower_interest",
-      "yield_sources": [
-        {
-          "category": "borrower_interest",
-          "apy": 5.03,
-          "share": 1
-        }
-      ],
-      "major_risks": [
-        {
-          "dimension": "liquidity",
-          "score": 33
-        },
-        {
-          "dimension": "governance",
-          "score": 31
-        },
-        {
-          "dimension": "oracle",
-          "score": 30
-        }
-      ],
-      "key_dependencies": [
-        {
-          "type": "issuer",
-          "name": "Circle"
-        }
-      ],
-      "governance_evidence": [
-        "Governance: multisig 4 of 6 with a 2-day timelock (https://docs.yo.xyz/protocol/yo-v2-security-framework.md, checked 2026-10-07)"
-      ],
-      "tvl_change_7d_pct": -1.5,
-      "apy_change_7d_pct": 10,
-      "why_this_yield_exists": "Yield comes entirely from interest paid by borrowers. This income source is highly durable.",
-      "what_could_lose_money": "Main risks are limited liquidity for exiting positions, governance changes, and oracle accuracy. The protocol depends on Circle, and the pool is relatively small.",
-      "what_changed_recently": "TVL -1.5% over 7 days, APY +10% over 7 days; 1 risk event this week (apy_jump). Social signals: not yet monitored.",
-      "text_source": "ai",
-      "url": "https://yields.fintechhodl.com/o/1994cc35-a2b9-434e-b197-df6742fb5d81/",
-      "data_url": "https://yields.fintechhodl.com/data/o/1994cc35-a2b9-434e-b197-df6742fb5d81.json"
     },
     {
       "id": "ba74d2b3-ed94-45b2-8536-92dcc29dac8e",
       "protocol": "morpho-blue",
       "market": "YMVOG-USDC",
       "type": "lending",
-      "apy": 4.98,
-      "sustainable_apy": 4.98,
-      "tvl_usd": 1961904,
+      "apy": 4.91,
+      "sustainable_apy": 4.91,
+      "tvl_usd": 2047588,
       "risk_score": 31,
       "opportunity_score": 62,
       "confidence": 100,
@@ -582,7 +529,7 @@
       "yield_sources": [
         {
           "category": "borrower_interest",
-          "apy": 4.98,
+          "apy": 4.91,
           "share": 1
         }
       ],
@@ -593,7 +540,7 @@
         },
         {
           "dimension": "asset",
-          "score": 41
+          "score": 39
         },
         {
           "dimension": "oracle",
@@ -616,13 +563,13 @@
       ],
       "governance_evidence": [
         "Governance: immutable contracts (https://docs.morpho.org/learn/governance/organization/, checked 2026-10-07)",
-        "Curator: Yearn · 3-day timelock · guardian · lends mostly against cbXRP (57%) at up to 86.0% LTV"
+        "Curator: Yearn · 3-day timelock · guardian · lends mostly against cbXRP (55%) at up to 86.0% LTV"
       ],
-      "tvl_change_7d_pct": 15.9,
-      "apy_change_7d_pct": -0.2,
+      "tvl_change_7d_pct": 30,
+      "apy_change_7d_pct": -2.6,
       "why_this_yield_exists": "It pays yield entirely from interest charged to borrowers, with a very durable source. The sustainability is at its highest level.",
       "what_could_lose_money": "The main risks are liquidity constraints and the quality of collateral backing the loans. It depends on Circle, Yearn, and Morpho. The pool is relatively small.",
-      "what_changed_recently": "TVL +15.9% over 7 days, APY -0.2% over 7 days; 2 risk events this week (vault_new_collateral). Social signals: not yet monitored.",
+      "what_changed_recently": "TVL +30% over 7 days, APY -2.6% over 7 days; 2 risk events this week (vault_new_collateral). Social signals: not yet monitored.",
       "text_source": "ai",
       "url": "https://yields.fintechhodl.com/o/ba74d2b3-ed94-45b2-8536-92dcc29dac8e/",
       "data_url": "https://yields.fintechhodl.com/data/o/ba74d2b3-ed94-45b2-8536-92dcc29dac8e.json"
@@ -632,9 +579,9 @@
       "protocol": "morpho-blue",
       "market": "GUSDCQ",
       "type": "lending",
-      "apy": 4.72,
-      "sustainable_apy": 4.72,
-      "tvl_usd": 2036991,
+      "apy": 4.71,
+      "sustainable_apy": 4.71,
+      "tvl_usd": 2037690,
       "risk_score": 31,
       "opportunity_score": 61,
       "confidence": 100,
@@ -644,7 +591,7 @@
       "yield_sources": [
         {
           "category": "borrower_interest",
-          "apy": 4.72,
+          "apy": 4.71,
           "share": 1
         }
       ],
@@ -681,10 +628,10 @@
         "Curator: Galaxy Curation · 3-day timelock · sentinel · lends mostly against cbBTC (90%) at up to 86.0% LTV"
       ],
       "tvl_change_7d_pct": 0.1,
-      "apy_change_7d_pct": -0.2,
+      "apy_change_7d_pct": -0.9,
       "why_this_yield_exists": "It pays yield entirely from interest paid by borrowers. This income source is highly durable.",
       "what_could_lose_money": "The main risks are limited ability to exit quickly, yield decline, and smart contract security. It depends on Circle and holds a moderate amount of assets.",
-      "what_changed_recently": "TVL +0.1% over 7 days, APY -0.2% over 7 days; no risk events this week. Social signals: not yet monitored.",
+      "what_changed_recently": "TVL +0.1% over 7 days, APY -0.9% over 7 days; no risk events this week. Social signals: not yet monitored.",
       "text_source": "ai",
       "url": "https://yields.fintechhodl.com/o/96ef2230-b5fc-47d7-bbb3-847816e1c15b/",
       "data_url": "https://yields.fintechhodl.com/data/o/96ef2230-b5fc-47d7-bbb3-847816e1c15b.json"
@@ -694,9 +641,9 @@
       "protocol": "morpho-blue",
       "market": "ARCHGV1USDC",
       "type": "lending",
-      "apy": 4.48,
-      "sustainable_apy": 4.48,
-      "tvl_usd": 1260236,
+      "apy": 4.47,
+      "sustainable_apy": 4.47,
+      "tvl_usd": 1260660,
       "risk_score": 31,
       "opportunity_score": 61,
       "confidence": 100,
@@ -706,7 +653,7 @@
       "yield_sources": [
         {
           "category": "borrower_interest",
-          "apy": 4.48,
+          "apy": 4.47,
           "share": 1
         }
       ],
@@ -740,91 +687,25 @@
       ],
       "governance_evidence": [
         "Governance: immutable contracts (https://docs.morpho.org/learn/governance/organization/, checked 2026-10-07)",
-        "Curator: Architect · 3-day timelock · no sentinel · largest collateral WETH (44%) at up to 86.0% LTV"
+        "Curator: Architect · 3-day timelock · no sentinel · largest collateral WETH (40%) at up to 86.0% LTV"
       ],
       "tvl_change_7d_pct": 0.1,
-      "apy_change_7d_pct": -0.2,
+      "apy_change_7d_pct": -1.2,
       "why_this_yield_exists": "It pays a yield from interest paid by borrowers. This yield source is highly durable.",
       "what_could_lose_money": "The main risks are liquidity constraints when exiting, governance decisions, and oracle manipulation. The position depends on Circle and the pool's size.",
-      "what_changed_recently": "TVL +0.1% over 7 days, APY -0.2% over 7 days; no risk events this week. Social signals: not yet monitored.",
+      "what_changed_recently": "TVL +0.1% over 7 days, APY -1.2% over 7 days; no risk events this week. Social signals: not yet monitored.",
       "text_source": "ai",
       "url": "https://yields.fintechhodl.com/o/15a4bbe2-d1fa-4dce-a780-27faeb859bd7/",
       "data_url": "https://yields.fintechhodl.com/data/o/15a4bbe2-d1fa-4dce-a780-27faeb859bd7.json"
-    },
-    {
-      "id": "7e0661bf-8cf3-45e6-9424-31916d4c7b84",
-      "protocol": "aave-v3",
-      "market": "USDC",
-      "type": "lending",
-      "apy": 5.68,
-      "sustainable_apy": 4.61,
-      "tvl_usd": 18210205,
-      "risk_score": 28,
-      "opportunity_score": 60,
-      "confidence": 100,
-      "yield_sustainability": 81,
-      "liquidity": "Good",
-      "primary_yield_source": "borrower_interest",
-      "yield_sources": [
-        {
-          "category": "borrower_interest",
-          "apy": 4.25,
-          "share": 0.749
-        },
-        {
-          "category": "token_incentives",
-          "apy": 1.43,
-          "share": 0.251
-        }
-      ],
-      "major_risks": [
-        {
-          "dimension": "governance",
-          "score": 37
-        },
-        {
-          "dimension": "liquidity",
-          "score": 24
-        },
-        {
-          "dimension": "oracle",
-          "score": 23
-        }
-      ],
-      "key_dependencies": [
-        {
-          "type": "protocol_family",
-          "name": "Aave"
-        },
-        {
-          "type": "oracle",
-          "name": "Chainlink"
-        },
-        {
-          "type": "issuer",
-          "name": "Circle"
-        }
-      ],
-      "governance_evidence": [
-        "Governance: token-holder governance with a 24-hour timelock (https://aave.com/docs/primitives/governance, checked 2026-10-07)"
-      ],
-      "tvl_change_7d_pct": 7.6,
-      "apy_change_7d_pct": 29.4,
-      "why_this_yield_exists": "It pays 5.7% APY: 75% from interest paid by borrowers, 25% from token incentives. That mix is mostly durable (sustainability 81/100).",
-      "what_could_lose_money": "The biggest risks are governance or admin decisions (37/100); not being able to exit quickly or cheaply (24/100); the price oracle being wrong or manipulated (23/100). It also depends on Chainlink, Circle. The pool holds $18.2M.",
-      "what_changed_recently": "TVL +7.6% over 7 days, APY +29.4% over 7 days; 1 risk event this week (tvl_drop). Social signals: not yet monitored.",
-      "text_source": "template",
-      "url": "https://yields.fintechhodl.com/o/7e0661bf-8cf3-45e6-9424-31916d4c7b84/",
-      "data_url": "https://yields.fintechhodl.com/data/o/7e0661bf-8cf3-45e6-9424-31916d4c7b84.json"
     },
     {
       "id": "65653183-7d69-408f-a76c-9dd2914f306f",
       "protocol": "morpho-blue",
       "market": "GTUSDCC",
       "type": "lending",
-      "apy": 4.24,
-      "sustainable_apy": 4.24,
-      "tvl_usd": 1801687,
+      "apy": 4.23,
+      "sustainable_apy": 4.23,
+      "tvl_usd": 1789988,
       "risk_score": 31,
       "opportunity_score": 60,
       "confidence": 100,
@@ -834,7 +715,7 @@
       "yield_sources": [
         {
           "category": "borrower_interest",
-          "apy": 4.24,
+          "apy": 4.23,
           "share": 1
         }
       ],
@@ -868,13 +749,13 @@
       ],
       "governance_evidence": [
         "Governance: immutable contracts (https://docs.morpho.org/learn/governance/organization/, checked 2026-10-07)",
-        "Curator: Gauntlet · 3-day timelock · guardian · lends mostly against cbBTC (71%) at up to 86.0% LTV"
+        "Curator: Gauntlet · 3-day timelock · guardian · lends mostly against cbBTC (80%) at up to 86.0% LTV"
       ],
-      "tvl_change_7d_pct": 0.1,
-      "apy_change_7d_pct": -1,
+      "tvl_change_7d_pct": -0.4,
+      "apy_change_7d_pct": -0.9,
       "why_this_yield_exists": "It pays yield entirely from interest charged to borrowers. This income source is highly durable.",
       "what_could_lose_money": "The main risks are limited ability to exit the position, declining yield, and oracle reliability. The position also depends on Circle and holds a modest pool size.",
-      "what_changed_recently": "TVL +0.1% over 7 days, APY -1% over 7 days; no risk events this week. Social signals: not yet monitored.",
+      "what_changed_recently": "TVL -0.4% over 7 days, APY -0.9% over 7 days; no risk events this week. Social signals: not yet monitored.",
       "text_source": "ai",
       "url": "https://yields.fintechhodl.com/o/65653183-7d69-408f-a76c-9dd2914f306f/",
       "data_url": "https://yields.fintechhodl.com/data/o/65653183-7d69-408f-a76c-9dd2914f306f.json"
@@ -884,11 +765,11 @@
       "protocol": "morpho-blue",
       "market": "BBQUSDC",
       "type": "lending",
-      "apy": 5.52,
-      "sustainable_apy": 5.52,
-      "tvl_usd": 31255588,
-      "risk_score": 34,
-      "opportunity_score": 59,
+      "apy": 5.46,
+      "sustainable_apy": 5.46,
+      "tvl_usd": 31446455,
+      "risk_score": 33,
+      "opportunity_score": 60,
       "confidence": 100,
       "yield_sustainability": 100,
       "liquidity": "Good",
@@ -896,14 +777,14 @@
       "yield_sources": [
         {
           "category": "borrower_interest",
-          "apy": 5.52,
+          "apy": 5.46,
           "share": 1
         }
       ],
       "major_risks": [
         {
           "dimension": "asset",
-          "score": 52
+          "score": 51
         },
         {
           "dimension": "liquidity",
@@ -930,27 +811,80 @@
       ],
       "governance_evidence": [
         "Governance: immutable contracts (https://docs.morpho.org/learn/governance/organization/, checked 2026-10-07)",
-        "Curator: Steakhouse Financial · 3-day timelock · sentinel · lends mostly against cbXRP (81%) at up to 62.5% LTV"
+        "Curator: Steakhouse Financial · 3-day timelock · sentinel · lends mostly against cbXRP (80%) at up to 86.0% LTV"
       ],
-      "tvl_change_7d_pct": 6.3,
-      "apy_change_7d_pct": -0.9,
+      "tvl_change_7d_pct": 7.3,
+      "apy_change_7d_pct": -1.9,
       "why_this_yield_exists": "Yield comes entirely from interest paid by borrowers at a set rate. This income source is highly durable.",
       "what_could_lose_money": "Main risks are price changes in collateral tokens held by the pool, difficulty exiting positions quickly, and potential oracle price inaccuracies. Success depends on Circle and the pool curator.",
-      "what_changed_recently": "TVL +6.3% over 7 days, APY -0.9% over 7 days; no risk events this week. Social signals: not yet monitored.",
+      "what_changed_recently": "TVL +7.3% over 7 days, APY -1.9% over 7 days; no risk events this week. Social signals: not yet monitored.",
       "text_source": "ai",
       "url": "https://yields.fintechhodl.com/o/832c94db-4948-4f14-aa65-af6e737d984e/",
       "data_url": "https://yields.fintechhodl.com/data/o/832c94db-4948-4f14-aa65-af6e737d984e.json"
+    },
+    {
+      "id": "1994cc35-a2b9-434e-b197-df6742fb5d81",
+      "protocol": "yo-protocol",
+      "market": "USDC",
+      "type": "vault",
+      "apy": 4.54,
+      "sustainable_apy": 4.54,
+      "tvl_usd": 7563029,
+      "risk_score": 28,
+      "opportunity_score": 59,
+      "confidence": 100,
+      "yield_sustainability": 100,
+      "liquidity": "Fair",
+      "primary_yield_source": "borrower_interest",
+      "yield_sources": [
+        {
+          "category": "borrower_interest",
+          "apy": 4.54,
+          "share": 1
+        }
+      ],
+      "major_risks": [
+        {
+          "dimension": "liquidity",
+          "score": 34
+        },
+        {
+          "dimension": "governance",
+          "score": 31
+        },
+        {
+          "dimension": "oracle",
+          "score": 30
+        }
+      ],
+      "key_dependencies": [
+        {
+          "type": "issuer",
+          "name": "Circle"
+        }
+      ],
+      "governance_evidence": [
+        "Governance: multisig 4 of 6 with a 2-day timelock (https://docs.yo.xyz/protocol/yo-v2-security-framework.md, checked 2026-10-07)"
+      ],
+      "tvl_change_7d_pct": -1.8,
+      "apy_change_7d_pct": 0.3,
+      "why_this_yield_exists": "Yield comes entirely from interest paid by borrowers. This income source is highly durable.",
+      "what_could_lose_money": "Main risks are limited liquidity for exiting positions, governance changes, and oracle accuracy. The protocol depends on Circle, and the pool is relatively small.",
+      "what_changed_recently": "TVL -1.8% over 7 days, APY +0.3% over 7 days; 1 risk event this week (apy_jump). Social signals: not yet monitored.",
+      "text_source": "ai",
+      "url": "https://yields.fintechhodl.com/o/1994cc35-a2b9-434e-b197-df6742fb5d81/",
+      "data_url": "https://yields.fintechhodl.com/data/o/1994cc35-a2b9-434e-b197-df6742fb5d81.json"
     },
     {
       "id": "b39b492a-0a64-4926-8598-d5acf05d62b5",
       "protocol": "morpho-blue",
       "market": "MWUSDC",
       "type": "lending",
-      "apy": 4.31,
-      "sustainable_apy": 4.19,
-      "tvl_usd": 2955322,
-      "risk_score": 32,
-      "opportunity_score": 58,
+      "apy": 4.34,
+      "sustainable_apy": 4.21,
+      "tvl_usd": 2570318,
+      "risk_score": 31,
+      "opportunity_score": 59,
       "confidence": 100,
       "yield_sustainability": 97,
       "liquidity": "Fair",
@@ -958,19 +892,19 @@
       "yield_sources": [
         {
           "category": "borrower_interest",
-          "apy": 4.15,
-          "share": 0.963
+          "apy": 4.16,
+          "share": 0.959
         },
         {
           "category": "token_incentives",
-          "apy": 0.16,
-          "share": 0.037
+          "apy": 0.18,
+          "share": 0.041
         }
       ],
       "major_risks": [
         {
           "dimension": "liquidity",
-          "score": 50
+          "score": 49
         },
         {
           "dimension": "oracle",
@@ -999,11 +933,11 @@
         "Governance: immutable contracts (https://docs.morpho.org/learn/governance/organization/, checked 2026-10-07)",
         "Curator: Anthias Labs · 4-day timelock · guardian · lends mostly against WETH (96%) at up to 86.0% LTV"
       ],
-      "tvl_change_7d_pct": -18.3,
+      "tvl_change_7d_pct": -16.1,
       "apy_change_7d_pct": -0.5,
       "why_this_yield_exists": "Yields come mainly from interest paid by borrowers, with a small portion from token incentives. This income source is highly durable.",
       "what_could_lose_money": "The main risks are difficulty exiting the position quickly, potential oracle failures, and protocol-level vulnerabilities. The position also depends on Circle and the pool's current size.",
-      "what_changed_recently": "TVL -18.3% over 7 days, APY -0.5% over 7 days; no risk events this week. Social signals: not yet monitored.",
+      "what_changed_recently": "TVL -16.1% over 7 days, APY -0.5% over 7 days; no risk events this week. Social signals: not yet monitored.",
       "text_source": "ai",
       "url": "https://yields.fintechhodl.com/o/b39b492a-0a64-4926-8598-d5acf05d62b5/",
       "data_url": "https://yields.fintechhodl.com/data/o/b39b492a-0a64-4926-8598-d5acf05d62b5.json"
@@ -1013,19 +947,19 @@
       "protocol": "morpho-blue",
       "market": "BITUSDCP",
       "type": "lending",
-      "apy": 4.5,
-      "sustainable_apy": 4.5,
-      "tvl_usd": 1536865,
+      "apy": 4.48,
+      "sustainable_apy": 4.48,
+      "tvl_usd": 1535756,
       "risk_score": 32,
       "opportunity_score": 58,
-      "confidence": 87,
+      "confidence": 88,
       "yield_sustainability": 100,
       "liquidity": "Fair",
       "primary_yield_source": "borrower_interest",
       "yield_sources": [
         {
           "category": "borrower_interest",
-          "apy": 4.5,
+          "apy": 4.48,
           "share": 1
         }
       ],
@@ -1061,23 +995,89 @@
         "Governance: immutable contracts (https://docs.morpho.org/learn/governance/organization/, checked 2026-10-07)",
         "Curator: Gauntlet · 7-day timelock · sentinel · largest collateral cbETH (45%) at up to 86.0% LTV"
       ],
-      "tvl_change_7d_pct": 34.5,
-      "apy_change_7d_pct": 0.2,
+      "tvl_change_7d_pct": 10.3,
+      "apy_change_7d_pct": -1.3,
       "why_this_yield_exists": "Yield comes entirely from interest paid by borrowers at a stable rate. The income source is highly durable.",
       "what_could_lose_money": "Main risks are limited liquidity for exiting the position, potential yield decline, and smart contract vulnerabilities across protocol layers. The position depends on Circle and holds relatively modest assets.",
-      "what_changed_recently": "TVL +34.5% over 7 days, APY +0.2% over 7 days; no risk events this week. Social signals: not yet monitored.",
+      "what_changed_recently": "TVL +10.3% over 7 days, APY -1.3% over 7 days; no risk events this week. Social signals: not yet monitored.",
       "text_source": "ai",
       "url": "https://yields.fintechhodl.com/o/3c9e2fb0-6bf6-53aa-9ff6-d78ff4d044a1/",
       "data_url": "https://yields.fintechhodl.com/data/o/3c9e2fb0-6bf6-53aa-9ff6-d78ff4d044a1.json"
+    },
+    {
+      "id": "7e0661bf-8cf3-45e6-9424-31916d4c7b84",
+      "protocol": "aave-v3",
+      "market": "USDC",
+      "type": "lending",
+      "apy": 6.42,
+      "sustainable_apy": 5.18,
+      "tvl_usd": 17005488,
+      "risk_score": 31,
+      "opportunity_score": 57,
+      "confidence": 100,
+      "yield_sustainability": 81,
+      "liquidity": "Fair",
+      "primary_yield_source": "borrower_interest",
+      "yield_sources": [
+        {
+          "category": "borrower_interest",
+          "apy": 4.77,
+          "share": 0.742
+        },
+        {
+          "category": "token_incentives",
+          "apy": 1.65,
+          "share": 0.258
+        }
+      ],
+      "major_risks": [
+        {
+          "dimension": "liquidity",
+          "score": 40
+        },
+        {
+          "dimension": "governance",
+          "score": 37
+        },
+        {
+          "dimension": "oracle",
+          "score": 23
+        }
+      ],
+      "key_dependencies": [
+        {
+          "type": "protocol_family",
+          "name": "Aave"
+        },
+        {
+          "type": "oracle",
+          "name": "Chainlink"
+        },
+        {
+          "type": "issuer",
+          "name": "Circle"
+        }
+      ],
+      "governance_evidence": [
+        "Governance: token-holder governance with a 24-hour timelock (https://aave.com/docs/primitives/governance, checked 2026-10-07)"
+      ],
+      "tvl_change_7d_pct": -16.6,
+      "apy_change_7d_pct": 10.7,
+      "why_this_yield_exists": "It pays 6.4% APY: 74% from interest paid by borrowers, 26% from token incentives. That mix is mostly durable (sustainability 81/100).",
+      "what_could_lose_money": "The biggest risks are not being able to exit quickly or cheaply (40/100); governance or admin decisions (37/100); the price oracle being wrong or manipulated (23/100). It also depends on Chainlink, Circle. The pool holds $17.0M.",
+      "what_changed_recently": "TVL -16.6% over 7 days, APY +10.7% over 7 days; 3 risk events this week (apy_jump, liquidity_drop, tvl_drop). Social signals: not yet monitored.",
+      "text_source": "template",
+      "url": "https://yields.fintechhodl.com/o/7e0661bf-8cf3-45e6-9424-31916d4c7b84/",
+      "data_url": "https://yields.fintechhodl.com/data/o/7e0661bf-8cf3-45e6-9424-31916d4c7b84.json"
     },
     {
       "id": "47548a32-63c2-4485-b348-eac2cc3a587f",
       "protocol": "morpho-blue",
       "market": "RE7USDC",
       "type": "lending",
-      "apy": 4.48,
-      "sustainable_apy": 4.48,
-      "tvl_usd": 1247225,
+      "apy": 4.47,
+      "sustainable_apy": 4.47,
+      "tvl_usd": 1247646,
       "risk_score": 34,
       "opportunity_score": 57,
       "confidence": 100,
@@ -1087,7 +1087,7 @@
       "yield_sources": [
         {
           "category": "borrower_interest",
-          "apy": 4.48,
+          "apy": 4.47,
           "share": 1
         }
       ],
@@ -1124,10 +1124,10 @@
         "Curator: RE7 Labs · no timelock · no sentinel · lends mostly against cbBTC (100%) at up to 86.0% LTV"
       ],
       "tvl_change_7d_pct": 0.1,
-      "apy_change_7d_pct": -0.2,
+      "apy_change_7d_pct": -0.8,
       "why_this_yield_exists": "Yield comes entirely from interest paid by borrowers, with very high sustainability. The position generates a steady income stream from this source.",
       "what_could_lose_money": "Main risks are limited ability to exit quickly, governance or administrative changes, and potential yield decline. The position also depends on Circle and relies on a modest pool size.",
-      "what_changed_recently": "TVL +0.1% over 7 days, APY -0.2% over 7 days; no risk events this week. Social signals: not yet monitored.",
+      "what_changed_recently": "TVL +0.1% over 7 days, APY -0.8% over 7 days; no risk events this week. Social signals: not yet monitored.",
       "text_source": "ai",
       "url": "https://yields.fintechhodl.com/o/47548a32-63c2-4485-b348-eac2cc3a587f/",
       "data_url": "https://yields.fintechhodl.com/data/o/47548a32-63c2-4485-b348-eac2cc3a587f.json"
@@ -1137,9 +1137,9 @@
       "protocol": "morpho-blue",
       "market": "GROVE-STEAKUSDC",
       "type": "lending",
-      "apy": 4.72,
-      "sustainable_apy": 3.54,
-      "tvl_usd": 443069557,
+      "apy": 4.71,
+      "sustainable_apy": 3.53,
+      "tvl_usd": 446786295,
       "risk_score": 26,
       "opportunity_score": 55,
       "confidence": 75,
@@ -1149,7 +1149,7 @@
       "yield_sources": [
         {
           "category": "borrower_interest",
-          "apy": 4.72,
+          "apy": 4.71,
           "share": 1
         }
       ],
@@ -1160,7 +1160,7 @@
         },
         {
           "dimension": "yield",
-          "score": 35
+          "score": 34
         },
         {
           "dimension": "oracle",
@@ -1185,11 +1185,11 @@
         "Governance: immutable contracts (https://docs.morpho.org/learn/governance/organization/, checked 2026-10-07)",
         "Curator: Steakhouse Financial · 7-day timelock · sentinel · lends mostly against cbBTC (90%) at up to 86.0% LTV"
       ],
-      "tvl_change_7d_pct": 57,
-      "apy_change_7d_pct": -0.3,
+      "tvl_change_7d_pct": 24,
+      "apy_change_7d_pct": -0.9,
       "why_this_yield_exists": "Yield comes entirely from interest paid by borrowers, offering a moderately durable income stream.",
       "what_could_lose_money": "Smart contract and underlying protocol risks are substantial; yield could fall due to the pool's recent history. Oracle manipulation poses moderate concern. The position depends on Circle and holds a large amount of capital.",
-      "what_changed_recently": "TVL +57% over 7 days, APY -0.3% over 7 days; no risk events this week. Social signals: not yet monitored.",
+      "what_changed_recently": "TVL +24% over 7 days, APY -0.9% over 7 days; no risk events this week. Social signals: not yet monitored.",
       "text_source": "ai",
       "url": "https://yields.fintechhodl.com/o/28470287-2c5b-5744-bc13-b9f1c0190b7b/",
       "data_url": "https://yields.fintechhodl.com/data/o/28470287-2c5b-5744-bc13-b9f1c0190b7b.json"
@@ -1201,7 +1201,7 @@
       "type": "vault",
       "apy": 9,
       "sustainable_apy": 7.5,
-      "tvl_usd": 10529362,
+      "tvl_usd": 10531482,
       "risk_score": 29,
       "opportunity_score": 53,
       "confidence": 95,
@@ -1241,54 +1241,58 @@
         }
       ],
       "governance_evidence": [],
-      "tvl_change_7d_pct": -0.1,
+      "tvl_change_7d_pct": 0,
       "apy_change_7d_pct": 0,
       "why_this_yield_exists": "It pays yield from a basis trade that makes up most of the return, plus some token incentives. This income mix has moderate durability.",
       "what_could_lose_money": "The main risks are the protocol's security and history, difficulty exiting the position quickly or affordably, and potential issues with the price oracle. It depends on Circle, and the pool is relatively small.",
-      "what_changed_recently": "TVL -0.1% over 7 days, APY +0% over 7 days; no risk events this week. Social signals: not yet monitored.",
+      "what_changed_recently": "TVL +0% over 7 days, APY +0% over 7 days; no risk events this week. Social signals: not yet monitored.",
       "text_source": "ai",
       "url": "https://yields.fintechhodl.com/o/79788d49-3f2f-4dd3-ac58-50c191486b6f/",
       "data_url": "https://yields.fintechhodl.com/data/o/79788d49-3f2f-4dd3-ac58-50c191486b6f.json"
     },
     {
-      "id": "8b3cadb9-b9f1-4539-998c-18c02e9e65a0",
-      "protocol": "uniswap-v3",
-      "market": "WETH-USDC",
-      "type": "lp",
-      "apy": 28.76,
-      "sustainable_apy": 18.4,
-      "tvl_usd": 8658627,
-      "risk_score": 39,
-      "opportunity_score": 51,
-      "confidence": 95,
-      "yield_sustainability": 81,
-      "liquidity": "Fair",
-      "primary_yield_source": "trading_fees",
+      "id": "c1949c46-0c01-445f-8017-b3192d9913bc",
+      "protocol": "morpho-blue",
+      "market": "PUSDC",
+      "type": "lending",
+      "apy": 4.22,
+      "sustainable_apy": 4.22,
+      "tvl_usd": 7901454,
+      "risk_score": 37,
+      "opportunity_score": 52,
+      "confidence": 100,
+      "yield_sustainability": 100,
+      "liquidity": "Poor",
+      "primary_yield_source": "borrower_interest",
       "yield_sources": [
         {
-          "category": "trading_fees",
-          "apy": 28.76,
+          "category": "borrower_interest",
+          "apy": 4.22,
           "share": 1
         }
       ],
       "major_risks": [
         {
-          "dimension": "yield",
-          "score": 58
-        },
-        {
           "dimension": "liquidity",
-          "score": 34
+          "score": 57
         },
         {
-          "dimension": "asset",
-          "score": 32
+          "dimension": "yield",
+          "score": 31
+        },
+        {
+          "dimension": "oracle",
+          "score": 18
         }
       ],
       "key_dependencies": [
         {
+          "type": "curator",
+          "name": "Pangolins"
+        },
+        {
           "type": "protocol_family",
-          "name": "Uniswap"
+          "name": "Morpho"
         },
         {
           "type": "issuer",
@@ -1296,25 +1300,85 @@
         }
       ],
       "governance_evidence": [
-        "Governance: immutable contracts (https://gov.uniswap.org/t/temp-check-protocol-fee-expansion-eight-more-chains-and-remaining-mainnet-v3-pools/26035, checked 2026-10-07)"
+        "Governance: immutable contracts (https://docs.morpho.org/learn/governance/organization/, checked 2026-10-07)",
+        "Curator: Pangolins · 3-day timelock · guardian · lends mostly against cbBTC (100%) at up to 86.0% LTV"
       ],
-      "tvl_change_7d_pct": -9.5,
-      "apy_change_7d_pct": -39.4,
-      "why_this_yield_exists": "Yield comes entirely from trading fees on WETH-USDC swaps, with a high likelihood of this source remaining stable.",
-      "what_could_lose_money": "Main risks are yield declining, difficulty exiting the position quickly, and price movement losses from holding both tokens. The pool's moderate size and dependence on Circle also matter.",
-      "what_changed_recently": "TVL -9.5% over 7 days, APY -39.4% over 7 days; no risk events this week. Social signals: not yet monitored.",
+      "tvl_change_7d_pct": -26.3,
+      "apy_change_7d_pct": -0.8,
+      "why_this_yield_exists": "It pays yield from interest charged to borrowers. That income source is highly durable.",
+      "what_could_lose_money": "The main risks are poor liquidity making it hard to exit, the yield potentially declining, and oracle risk. It depends on Circle and the Morpho protocol.",
+      "what_changed_recently": "TVL -26.3% over 7 days, APY -0.8% over 7 days; 1 risk event this week (risk_score_jump). Social signals: not yet monitored.",
       "text_source": "ai",
-      "url": "https://yields.fintechhodl.com/o/8b3cadb9-b9f1-4539-998c-18c02e9e65a0/",
-      "data_url": "https://yields.fintechhodl.com/data/o/8b3cadb9-b9f1-4539-998c-18c02e9e65a0.json"
+      "url": "https://yields.fintechhodl.com/o/c1949c46-0c01-445f-8017-b3192d9913bc/",
+      "data_url": "https://yields.fintechhodl.com/data/o/c1949c46-0c01-445f-8017-b3192d9913bc.json"
+    },
+    {
+      "id": "7372edda-f07f-4598-83e5-4edec48c4039",
+      "protocol": "fluid-lending",
+      "market": "USDC",
+      "type": "lending",
+      "apy": 7.66,
+      "sustainable_apy": 7.66,
+      "tvl_usd": 8205417,
+      "risk_score": 41,
+      "opportunity_score": 51,
+      "confidence": 95,
+      "yield_sustainability": 100,
+      "liquidity": "Poor",
+      "primary_yield_source": "borrower_interest",
+      "yield_sources": [
+        {
+          "category": "borrower_interest",
+          "apy": 7.66,
+          "share": 1
+        }
+      ],
+      "major_risks": [
+        {
+          "dimension": "liquidity",
+          "score": 52
+        },
+        {
+          "dimension": "protocol",
+          "score": 43
+        },
+        {
+          "dimension": "smart_contract",
+          "score": 29
+        }
+      ],
+      "key_dependencies": [
+        {
+          "type": "protocol_family",
+          "name": "Fluid"
+        },
+        {
+          "type": "oracle",
+          "name": "Chainlink"
+        },
+        {
+          "type": "issuer",
+          "name": "Circle"
+        }
+      ],
+      "governance_evidence": [],
+      "tvl_change_7d_pct": -22.8,
+      "apy_change_7d_pct": -9.2,
+      "why_this_yield_exists": "It pays 7.7% APY: 100% from interest paid by borrowers. That mix is mostly durable (sustainability 100/100).",
+      "what_could_lose_money": "The biggest risks are not being able to exit quickly or cheaply (52/100); the protocol itself (its age, size, audits and exploit history) (43/100); the pool's smart contracts and the layers beneath them (29/100). It also depends on Chainlink, Circle. The pool holds $8.2M.",
+      "what_changed_recently": "TVL -22.8% over 7 days, APY -9.2% over 7 days; 2 risk events this week (apy_jump, tvl_drop). Social signals: not yet monitored.",
+      "text_source": "template",
+      "url": "https://yields.fintechhodl.com/o/7372edda-f07f-4598-83e5-4edec48c4039/",
+      "data_url": "https://yields.fintechhodl.com/data/o/7372edda-f07f-4598-83e5-4edec48c4039.json"
     },
     {
       "id": "b99bcdf5-1350-4269-981e-0e9b5cccb007",
       "protocol": "uniswap-v3",
       "market": "WETH-USDC",
       "type": "lp",
-      "apy": 49.51,
-      "sustainable_apy": 15.21,
-      "tvl_usd": 156608444,
+      "apy": 47.65,
+      "sustainable_apy": 14.67,
+      "tvl_usd": 156663852,
       "risk_score": 38,
       "opportunity_score": 50,
       "confidence": 95,
@@ -1324,7 +1388,7 @@
       "yield_sources": [
         {
           "category": "trading_fees",
-          "apy": 49.51,
+          "apy": 47.65,
           "share": 1
         }
       ],
@@ -1355,12 +1419,12 @@
       "governance_evidence": [
         "Governance: immutable contracts (https://gov.uniswap.org/t/temp-check-protocol-fee-expansion-eight-more-chains-and-remaining-mainnet-v3-pools/26035, checked 2026-10-07)"
       ],
-      "tvl_change_7d_pct": 4.1,
-      "apy_change_7d_pct": -42.6,
-      "why_this_yield_exists": "It pays 49.5% APY: 100% from trading fees. That mix is mostly durable (sustainability 77/100).",
-      "what_could_lose_money": "The biggest risks are the yield falling or disappearing (60/100); price swings in the tokens held, including impermanent loss (32/100); the protocol itself (its age, size, audits and exploit history) (16/100). It also depends on Circle. The pool holds $156.6M.",
-      "what_changed_recently": "TVL +4.1% over 7 days, APY -42.6% over 7 days; 1 risk event this week (apy_drop). Social signals: not yet monitored.",
-      "text_source": "template",
+      "tvl_change_7d_pct": 7,
+      "apy_change_7d_pct": -33,
+      "why_this_yield_exists": "It pays yield from trading fees. This income source is moderately durable.",
+      "what_could_lose_money": "The main risks are the yield declining, price swings in the held tokens including impermanent loss, and protocol-level factors. It depends on Circle and the pool's size.",
+      "what_changed_recently": "TVL +7% over 7 days, APY -33% over 7 days; 1 risk event this week (apy_drop). Social signals: not yet monitored.",
+      "text_source": "ai",
       "url": "https://yields.fintechhodl.com/o/b99bcdf5-1350-4269-981e-0e9b5cccb007/",
       "data_url": "https://yields.fintechhodl.com/data/o/b99bcdf5-1350-4269-981e-0e9b5cccb007.json"
     },
@@ -1369,9 +1433,9 @@
       "protocol": "morpho-blue",
       "market": "K3USDC",
       "type": "lending",
-      "apy": 5.58,
-      "sustainable_apy": 5.58,
-      "tvl_usd": 3698442,
+      "apy": 5.52,
+      "sustainable_apy": 5.52,
+      "tvl_usd": 3699828,
       "risk_score": 39,
       "opportunity_score": 50,
       "confidence": 82,
@@ -1381,7 +1445,7 @@
       "yield_sources": [
         {
           "category": "borrower_interest",
-          "apy": 5.58,
+          "apy": 5.52,
           "share": 1
         }
       ],
@@ -1418,10 +1482,10 @@
         "Curator: K3 Capital · 3-day timelock · sentinel · lends mostly against cbXRP (97%) at up to 62.5% LTV"
       ],
       "tvl_change_7d_pct": 0.2,
-      "apy_change_7d_pct": 4.6,
-      "why_this_yield_exists": "It pays roughly mid-single-digit APY, entirely from interest paid by borrowers. This income source is stable.",
-      "what_could_lose_money": "The main risks are losses from the collateral assets held, liquidity constraints that could make exiting difficult, and smart contract risks in the pool and underlying protocol. The position depends on Circle, and the pool holds moderate total value.",
-      "what_changed_recently": "TVL +0.2% over 7 days, APY +4.6% over 7 days; 1 risk event this week (vault_new_collateral). Social signals: not yet monitored.",
+      "apy_change_7d_pct": -0.2,
+      "why_this_yield_exists": "It pays yield from interest charged to borrowers. This income source is very durable.",
+      "what_could_lose_money": "The main risks are exposure to the collateral tokens and their price movements, difficulty exiting the position, and smart contract risk across the pool and its underlying layers. The position also depends on Circle and holds a moderate pool size.",
+      "what_changed_recently": "TVL +0.2% over 7 days, APY -0.2% over 7 days; no risk events this week. Social signals: not yet monitored.",
       "text_source": "ai",
       "url": "https://yields.fintechhodl.com/o/cca340f1-03e7-5097-8d7c-f07def190cc2/",
       "data_url": "https://yields.fintechhodl.com/data/o/cca340f1-03e7-5097-8d7c-f07def190cc2.json"
@@ -1431,9 +1495,9 @@
       "protocol": "40-acres",
       "market": "40BASE-USDC-VAULT",
       "type": "lending",
-      "apy": 33.3,
-      "sustainable_apy": 33.3,
-      "tvl_usd": 5707461,
+      "apy": 33.24,
+      "sustainable_apy": 33.24,
+      "tvl_usd": 5708661,
       "risk_score": 43,
       "opportunity_score": 50,
       "confidence": 95,
@@ -1443,7 +1507,7 @@
       "yield_sources": [
         {
           "category": "borrower_interest",
-          "apy": 33.3,
+          "apy": 33.24,
           "share": 1
         }
       ],
@@ -1453,11 +1517,11 @@
           "score": 55
         },
         {
-          "dimension": "liquidity",
-          "score": 37
+          "dimension": "protocol",
+          "score": 36
         },
         {
-          "dimension": "protocol",
+          "dimension": "liquidity",
           "score": 36
         }
       ],
@@ -1468,76 +1532,14 @@
         }
       ],
       "governance_evidence": [],
-      "tvl_change_7d_pct": -4.6,
-      "apy_change_7d_pct": 19.2,
-      "why_this_yield_exists": "Yield comes entirely from interest paid by borrowers. This income source is stable.",
-      "what_could_lose_money": "Main risks are yield declining, difficulty exiting quickly, and protocol-level concerns. The position relies on Circle and operates in a modest-sized pool.",
-      "what_changed_recently": "TVL -4.6% over 7 days, APY +19.2% over 7 days; no risk events this week. Social signals: not yet monitored.",
-      "text_source": "ai",
+      "tvl_change_7d_pct": -2,
+      "apy_change_7d_pct": 3.5,
+      "why_this_yield_exists": "It pays 33.2% APY: 100% from interest paid by borrowers. That mix is mostly durable (sustainability 100/100).",
+      "what_could_lose_money": "The biggest risks are the yield falling or disappearing (55/100); the protocol itself (its age, size, audits and exploit history) (36/100); not being able to exit quickly or cheaply (36/100). It also depends on Circle. The pool holds $5.7M.",
+      "what_changed_recently": "TVL -2% over 7 days, APY +3.5% over 7 days; no risk events this week. Social signals: not yet monitored.",
+      "text_source": "template",
       "url": "https://yields.fintechhodl.com/o/35b00f23-d8f5-4a9c-822c-c323fb164215/",
       "data_url": "https://yields.fintechhodl.com/data/o/35b00f23-d8f5-4a9c-822c-c323fb164215.json"
-    },
-    {
-      "id": "c1949c46-0c01-445f-8017-b3192d9913bc",
-      "protocol": "morpho-blue",
-      "market": "PUSDC",
-      "type": "lending",
-      "apy": 4.24,
-      "sustainable_apy": 4.24,
-      "tvl_usd": 7885436,
-      "risk_score": 40,
-      "opportunity_score": 49,
-      "confidence": 100,
-      "yield_sustainability": 100,
-      "liquidity": "Poor",
-      "primary_yield_source": "borrower_interest",
-      "yield_sources": [
-        {
-          "category": "borrower_interest",
-          "apy": 4.24,
-          "share": 1
-        }
-      ],
-      "major_risks": [
-        {
-          "dimension": "liquidity",
-          "score": 63
-        },
-        {
-          "dimension": "yield",
-          "score": 31
-        },
-        {
-          "dimension": "oracle",
-          "score": 18
-        }
-      ],
-      "key_dependencies": [
-        {
-          "type": "curator",
-          "name": "Pangolins"
-        },
-        {
-          "type": "protocol_family",
-          "name": "Morpho"
-        },
-        {
-          "type": "issuer",
-          "name": "Circle"
-        }
-      ],
-      "governance_evidence": [
-        "Governance: immutable contracts (https://docs.morpho.org/learn/governance/organization/, checked 2026-10-07)",
-        "Curator: Pangolins · 3-day timelock · guardian · lends mostly against cbBTC (100%) at up to 86.0% LTV"
-      ],
-      "tvl_change_7d_pct": -32.4,
-      "apy_change_7d_pct": 0.1,
-      "why_this_yield_exists": "Yield comes entirely from interest paid by borrowers at a stable rate. This income source is highly durable.",
-      "what_could_lose_money": "Main risks are poor liquidity making exits difficult, declining yield, and oracle reliability. The position depends on Circle and the Morpho protocol.",
-      "what_changed_recently": "TVL -32.4% over 7 days, APY +0.1% over 7 days; 1 risk event this week (risk_score_jump). Social signals: not yet monitored.",
-      "text_source": "ai",
-      "url": "https://yields.fintechhodl.com/o/c1949c46-0c01-445f-8017-b3192d9913bc/",
-      "data_url": "https://yields.fintechhodl.com/data/o/c1949c46-0c01-445f-8017-b3192d9913bc.json"
     }
   ]
 }

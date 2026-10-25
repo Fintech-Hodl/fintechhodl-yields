@@ -2,8 +2,8 @@
   "schema_version": 1,
   "source": "FinTech Hodl, LLC — Base DeFi risk intel",
   "network": "base",
-  "as_of": "2026-10-23T03:00:00Z",
-  "captured_at": "2026-10-23T03:51:45.935Z",
+  "as_of": "2026-10-24T05:00:00Z",
+  "captured_at": "2026-10-24T05:20:00.134Z",
   "delay_hours": 24,
   "preview": false,
   "model_version": "1.3.0",
@@ -14,11 +14,11 @@
     "protocol": "morpho-blue",
     "market": "BBQUSDC",
     "type": "lending",
-    "apy": 5.52,
-    "sustainable_apy": 5.52,
-    "tvl_usd": 31255588,
-    "risk_score": 34,
-    "opportunity_score": 59,
+    "apy": 5.46,
+    "sustainable_apy": 5.46,
+    "tvl_usd": 31446455,
+    "risk_score": 33,
+    "opportunity_score": 60,
     "confidence": 100,
     "yield_sustainability": 100,
     "liquidity": "Good",
@@ -26,14 +26,14 @@
     "yield_sources": [
       {
         "category": "borrower_interest",
-        "apy": 5.52,
+        "apy": 5.46,
         "share": 1
       }
     ],
     "major_risks": [
       {
         "dimension": "asset",
-        "score": 52
+        "score": 51
       },
       {
         "dimension": "liquidity",
@@ -60,13 +60,13 @@
     ],
     "governance_evidence": [
       "Governance: immutable contracts (https://docs.morpho.org/learn/governance/organization/, checked 2026-10-07)",
-      "Curator: Steakhouse Financial · 3-day timelock · sentinel · lends mostly against cbXRP (81%) at up to 62.5% LTV"
+      "Curator: Steakhouse Financial · 3-day timelock · sentinel · lends mostly against cbXRP (80%) at up to 86.0% LTV"
     ],
-    "tvl_change_7d_pct": 6.3,
-    "apy_change_7d_pct": -0.9,
+    "tvl_change_7d_pct": 7.3,
+    "apy_change_7d_pct": -1.9,
     "why_this_yield_exists": "Yield comes entirely from interest paid by borrowers at a set rate. This income source is highly durable.",
     "what_could_lose_money": "Main risks are price changes in collateral tokens held by the pool, difficulty exiting positions quickly, and potential oracle price inaccuracies. Success depends on Circle and the pool curator.",
-    "what_changed_recently": "TVL +6.3% over 7 days, APY -0.9% over 7 days; no risk events this week. Social signals: not yet monitored.",
+    "what_changed_recently": "TVL +7.3% over 7 days, APY -1.9% over 7 days; no risk events this week. Social signals: not yet monitored.",
     "text_source": "ai",
     "url": "https://yields.fintechhodl.com/o/832c94db-4948-4f14-aa65-af6e737d984e/",
     "data_url": "https://yields.fintechhodl.com/data/o/832c94db-4948-4f14-aa65-af6e737d984e.json"

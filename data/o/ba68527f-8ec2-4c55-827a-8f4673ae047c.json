@@ -2,8 +2,8 @@
   "schema_version": 1,
   "source": "FinTech Hodl, LLC — Base DeFi risk intel",
   "network": "base",
-  "as_of": "2026-10-23T03:00:00Z",
-  "captured_at": "2026-10-23T03:51:45.935Z",
+  "as_of": "2026-10-24T05:00:00Z",
+  "captured_at": "2026-10-24T05:20:00.134Z",
   "delay_hours": 24,
   "preview": false,
   "model_version": "1.3.0",
@@ -14,30 +14,30 @@
     "protocol": "morpho-blue",
     "market": "STEAKUSDC",
     "type": "lending",
-    "apy": 4.72,
-    "sustainable_apy": 4.72,
-    "tvl_usd": 145939440,
-    "risk_score": 30,
-    "opportunity_score": 63,
+    "apy": 4.71,
+    "sustainable_apy": 4.71,
+    "tvl_usd": 146081092,
+    "risk_score": 23,
+    "opportunity_score": 72,
     "confidence": 100,
     "yield_sustainability": 100,
-    "liquidity": "Fair",
+    "liquidity": "Good",
     "primary_yield_source": "borrower_interest",
     "yield_sources": [
       {
         "category": "borrower_interest",
-        "apy": 4.72,
+        "apy": 4.71,
         "share": 1
       }
     ],
     "major_risks": [
       {
-        "dimension": "liquidity",
-        "score": 43
-      },
-      {
         "dimension": "yield",
         "score": 31
+      },
+      {
+        "dimension": "liquidity",
+        "score": 18
       },
       {
         "dimension": "oracle",
@@ -62,11 +62,11 @@
       "Governance: immutable contracts (https://docs.morpho.org/learn/governance/organization/, checked 2026-10-07)",
       "Curator: Steakhouse Financial · 7-day timelock · sentinel · lends mostly against cbBTC (92%) at up to 86.0% LTV"
     ],
-    "tvl_change_7d_pct": -20.1,
-    "apy_change_7d_pct": -0.3,
+    "tvl_change_7d_pct": -1.9,
+    "apy_change_7d_pct": -0.8,
     "why_this_yield_exists": "Yield comes entirely from interest paid by borrowers. This income source is highly durable.",
-    "what_could_lose_money": "Main risks are limited liquidity for exiting positions, declining yield, and oracle reliability. The position also depends on Circle and Steakhouse Financial's curation.",
-    "what_changed_recently": "TVL -20.1% over 7 days, APY -0.3% over 7 days; no risk events this week. Social signals: not yet monitored.",
+    "what_could_lose_money": "Main risks are yield declining, difficulty exiting the position, and oracle price manipulation. The position also relies on Circle and the pool's current size.",
+    "what_changed_recently": "TVL -1.9% over 7 days, APY -0.8% over 7 days; no risk events this week. Social signals: not yet monitored.",
     "text_source": "ai",
     "url": "https://yields.fintechhodl.com/o/ba68527f-8ec2-4c55-827a-8f4673ae047c/",
     "data_url": "https://yields.fintechhodl.com/data/o/ba68527f-8ec2-4c55-827a-8f4673ae047c.json"
