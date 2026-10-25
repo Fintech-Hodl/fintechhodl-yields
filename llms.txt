@@ -1,7 +1,7 @@
 # FinTech Hodl — Base DeFi yields and risk data
 
 > Risk scores, yields and plain-English risk reports for the top 25 Base DeFi opportunities. Risk data only, not investment advice.
-> Free tier, delayed 24 hours. Data as of 2026-10-24T05:00:00Z. Scoring model 1.3.0.
+> Free tier, delayed 24 hours. Data as of 2026-10-24T14:00:00Z. Scoring model 1.3.0.
 
 ## Machine-readable data
 - [All opportunities (JSON)](https://yields.fintechhodl.com/data/opportunities.json): the 25 rows with scores, yield sources, risks, dependencies and report text.
@@ -23,7 +23,8 @@ A pay-per-call API with fresh (not delayed) scores, full risk cards, history, de
 - [Routes and prices](https://intel.fintechhodl.com/.well-known/x402): every route, its price and what it returns. Prices are set there; check them before paying.
 - Free: https://intel.fintechhodl.com/health and https://intel.fintechhodl.com/api/v1/opportunities (search and filter the full list), limited to 60 calls an hour per client.
 - Paid: request a route, read the 402 response's PAYMENT-REQUIRED header, pay with an x402 client and repeat the request. You are charged only for a 200 answer; while data is refreshing, paid routes answer 503 and charge nothing.
-- MCP: https://intel.fintechhodl.com/mcp (Streamable HTTP, stateless) offers the same data as 13 tools (2 free, 11 paid with x402 over MCP, same prices). Use an MCP client that can pay with x402, for example @x402/mcp.
+- Yields, quoted vs realized: https://intel.fintechhodl.com/api/v1/yields (paid) ranks Base vaults and lending markets and shows, next to each quoted APY, the APY depositors actually earned over 7 and 30 days, read from on-chain share prices. Filter by asset, type, stable_only, min_apy, risk_max or realized_only; sort by risk_adjusted, realized_apy, quoted_apy or tvl.
+- MCP: https://intel.fintechhodl.com/mcp (Streamable HTTP, stateless) offers the same data as 14 tools (2 free, 12 paid with x402 over MCP, same prices). Use an MCP client that can pay with x402, for example @x402/mcp.
 - Also listed in the x402 Bazaar (Coinbase's catalog of x402 services). The [OpenAPI description](https://yields.fintechhodl.com/openapi.json) covers these routes too.
 
 ## Contact

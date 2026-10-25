@@ -1,0 +1,69 @@
+{
+  "schema_version": 1,
+  "source": "FinTech Hodl, LLC — Base DeFi risk intel",
+  "network": "base",
+  "as_of": "2026-10-24T14:00:00Z",
+  "captured_at": "2026-10-24T14:51:44.514Z",
+  "delay_hours": 24,
+  "preview": false,
+  "model_version": "1.3.0",
+  "disclaimer": "Risk data only, not investment advice.",
+  "terms": "Free to read and cite with attribution; delayed data for information only. Fresh data is available as a paid x402 API (USDC on Base): https://intel.fintechhodl.com/.well-known/x402",
+  "item": {
+    "id": "8b3cadb9-b9f1-4539-998c-18c02e9e65a0",
+    "protocol": "uniswap-v3",
+    "market": "WETH-USDC",
+    "type": "lp",
+    "apy": 23.18,
+    "sustainable_apy": 19.81,
+    "tvl_usd": 8566484,
+    "risk_score": 40,
+    "opportunity_score": 50,
+    "confidence": 95,
+    "yield_sustainability": 81,
+    "liquidity": "Fair",
+    "primary_yield_source": "trading_fees",
+    "yield_sources": [
+      {
+        "category": "trading_fees",
+        "apy": 23.18,
+        "share": 1
+      }
+    ],
+    "major_risks": [
+      {
+        "dimension": "yield",
+        "score": 59
+      },
+      {
+        "dimension": "liquidity",
+        "score": 33
+      },
+      {
+        "dimension": "asset",
+        "score": 32
+      }
+    ],
+    "key_dependencies": [
+      {
+        "type": "protocol_family",
+        "name": "Uniswap"
+      },
+      {
+        "type": "issuer",
+        "name": "Circle"
+      }
+    ],
+    "governance_evidence": [
+      "Governance: immutable contracts (https://gov.uniswap.org/t/temp-check-protocol-fee-expansion-eight-more-chains-and-remaining-mainnet-v3-pools/26035, checked 2026-10-07)"
+    ],
+    "tvl_change_7d_pct": -5.9,
+    "apy_change_7d_pct": -30.3,
+    "why_this_yield_exists": "The position generates yield from trading fees on the WETH-USDC pool. This income source is mostly durable.",
+    "what_could_lose_money": "The main risks are the yield declining, difficulty exiting the position quickly, and price swings in the underlying tokens. It also depends on Circle and the pool's liquidity level.",
+    "what_changed_recently": "TVL -5.9% over 7 days, APY -30.3% over 7 days; 1 risk event this week (apy_drop). Social signals: not yet monitored.",
+    "text_source": "ai",
+    "url": "https://yields.fintechhodl.com/o/8b3cadb9-b9f1-4539-998c-18c02e9e65a0/",
+    "data_url": "https://yields.fintechhodl.com/data/o/8b3cadb9-b9f1-4539-998c-18c02e9e65a0.json"
+  }
+}

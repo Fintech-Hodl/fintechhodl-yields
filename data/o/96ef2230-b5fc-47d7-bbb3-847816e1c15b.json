@@ -2,8 +2,8 @@
   "schema_version": 1,
   "source": "FinTech Hodl, LLC — Base DeFi risk intel",
   "network": "base",
-  "as_of": "2026-10-24T05:00:00Z",
-  "captured_at": "2026-10-24T05:20:00.134Z",
+  "as_of": "2026-10-24T14:00:00Z",
+  "captured_at": "2026-10-24T14:51:44.514Z",
   "delay_hours": 24,
   "preview": false,
   "model_version": "1.3.0",
@@ -16,7 +16,7 @@
     "type": "lending",
     "apy": 4.71,
     "sustainable_apy": 4.71,
-    "tvl_usd": 2037690,
+    "tvl_usd": 2037655,
     "risk_score": 31,
     "opportunity_score": 61,
     "confidence": 100,
@@ -60,13 +60,13 @@
     ],
     "governance_evidence": [
       "Governance: immutable contracts (https://docs.morpho.org/learn/governance/organization/, checked 2026-10-07)",
-      "Curator: Galaxy Curation · 3-day timelock · sentinel · lends mostly against cbBTC (90%) at up to 86.0% LTV"
+      "Curator: Galaxy Curation · 3-day timelock · sentinel · lends mostly against cbBTC (100%) at up to 86.0% LTV"
     ],
     "tvl_change_7d_pct": 0.1,
-    "apy_change_7d_pct": -0.9,
+    "apy_change_7d_pct": -0.7,
     "why_this_yield_exists": "It pays yield entirely from interest paid by borrowers. This income source is highly durable.",
     "what_could_lose_money": "The main risks are limited ability to exit quickly, yield decline, and smart contract security. It depends on Circle and holds a moderate amount of assets.",
-    "what_changed_recently": "TVL +0.1% over 7 days, APY -0.9% over 7 days; no risk events this week. Social signals: not yet monitored.",
+    "what_changed_recently": "TVL +0.1% over 7 days, APY -0.7% over 7 days; no risk events this week. Social signals: not yet monitored.",
     "text_source": "ai",
     "url": "https://yields.fintechhodl.com/o/96ef2230-b5fc-47d7-bbb3-847816e1c15b/",
     "data_url": "https://yields.fintechhodl.com/data/o/96ef2230-b5fc-47d7-bbb3-847816e1c15b.json"

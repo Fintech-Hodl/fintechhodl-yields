@@ -2,8 +2,8 @@
   "schema_version": 1,
   "source": "FinTech Hodl, LLC — Base DeFi risk intel",
   "network": "base",
-  "as_of": "2026-10-24T05:00:00Z",
-  "captured_at": "2026-10-24T05:20:00.134Z",
+  "as_of": "2026-10-24T14:00:00Z",
+  "captured_at": "2026-10-24T14:51:44.514Z",
   "delay_hours": 24,
   "preview": false,
   "model_version": "1.3.0",
@@ -14,9 +14,9 @@
     "protocol": "yo-protocol",
     "market": "USDC",
     "type": "vault",
-    "apy": 4.54,
-    "sustainable_apy": 4.54,
-    "tvl_usd": 7563029,
+    "apy": 4.51,
+    "sustainable_apy": 4.51,
+    "tvl_usd": 7562995,
     "risk_score": 28,
     "opportunity_score": 59,
     "confidence": 100,
@@ -26,7 +26,7 @@
     "yield_sources": [
       {
         "category": "borrower_interest",
-        "apy": 4.54,
+        "apy": 4.51,
         "share": 1
       }
     ],
@@ -54,10 +54,10 @@
       "Governance: multisig 4 of 6 with a 2-day timelock (https://docs.yo.xyz/protocol/yo-v2-security-framework.md, checked 2026-10-07)"
     ],
     "tvl_change_7d_pct": -1.8,
-    "apy_change_7d_pct": 0.3,
+    "apy_change_7d_pct": -0.5,
     "why_this_yield_exists": "Yield comes entirely from interest paid by borrowers. This income source is highly durable.",
     "what_could_lose_money": "Main risks are limited liquidity for exiting positions, governance changes, and oracle accuracy. The protocol depends on Circle, and the pool is relatively small.",
-    "what_changed_recently": "TVL -1.8% over 7 days, APY +0.3% over 7 days; 1 risk event this week (apy_jump). Social signals: not yet monitored.",
+    "what_changed_recently": "TVL -1.8% over 7 days, APY -0.5% over 7 days; 1 risk event this week (apy_jump). Social signals: not yet monitored.",
     "text_source": "ai",
     "url": "https://yields.fintechhodl.com/o/1994cc35-a2b9-434e-b197-df6742fb5d81/",
     "data_url": "https://yields.fintechhodl.com/data/o/1994cc35-a2b9-434e-b197-df6742fb5d81.json"
