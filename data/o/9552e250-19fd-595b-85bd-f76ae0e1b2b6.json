@@ -1,0 +1,74 @@
+{
+  "schema_version": 1,
+  "source": "FinTech Hodl, LLC — Base DeFi risk intel",
+  "network": "base",
+  "as_of": "2026-10-25T01:00:00Z",
+  "captured_at": "2026-10-25T01:51:44.677Z",
+  "delay_hours": 24,
+  "preview": false,
+  "model_version": "1.3.0",
+  "disclaimer": "Risk data only, not investment advice.",
+  "terms": "Free to read and cite with attribution; delayed data for information only. Fresh data is available as a paid x402 API (USDC on Base): https://intel.fintechhodl.com/.well-known/x402",
+  "item": {
+    "id": "9552e250-19fd-595b-85bd-f76ae0e1b2b6",
+    "protocol": "morpho-blue",
+    "market": "KPK-USDC-YIELD",
+    "type": "lending",
+    "apy": 6.79,
+    "sustainable_apy": 4.67,
+    "tvl_usd": 5094056,
+    "risk_score": 32,
+    "opportunity_score": 50,
+    "confidence": 73,
+    "yield_sustainability": 69,
+    "liquidity": "Fair",
+    "primary_yield_source": "borrower_interest",
+    "yield_sources": [
+      {
+        "category": "borrower_interest",
+        "apy": 6.03,
+        "share": 0.888
+      },
+      {
+        "category": "token_incentives",
+        "apy": 0.76,
+        "share": 0.112
+      }
+    ],
+    "major_risks": [
+      {
+        "dimension": "liquidity",
+        "score": 36
+      },
+      {
+        "dimension": "smart_contract",
+        "score": 31
+      },
+      {
+        "dimension": "oracle",
+        "score": 30
+      }
+    ],
+    "key_dependencies": [
+      {
+        "type": "protocol_family",
+        "name": "Morpho"
+      },
+      {
+        "type": "issuer",
+        "name": "Circle"
+      }
+    ],
+    "governance_evidence": [
+      "Governance: immutable contracts (https://docs.morpho.org/learn/governance/organization/, checked 2026-10-07)"
+    ],
+    "tvl_change_7d_pct": 2.8,
+    "apy_change_7d_pct": -3.3,
+    "why_this_yield_exists": "Yield comes mostly from borrower interest with a smaller portion from token rewards. The income source has moderate durability.",
+    "what_could_lose_money": "Main risks are liquidity constraints when exiting, smart contract vulnerabilities, and oracle price accuracy. The position depends on Circle and operates within a modest pool size.",
+    "what_changed_recently": "TVL +2.8% over 7 days, APY -3.3% over 7 days; no risk events this week. Social signals: not yet monitored.",
+    "text_source": "ai",
+    "url": "https://yields.fintechhodl.com/o/9552e250-19fd-595b-85bd-f76ae0e1b2b6/",
+    "data_url": "https://yields.fintechhodl.com/data/o/9552e250-19fd-595b-85bd-f76ae0e1b2b6.json"
+  }
+}

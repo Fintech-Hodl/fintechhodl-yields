@@ -2,8 +2,8 @@
   "schema_version": 1,
   "source": "FinTech Hodl, LLC — Base DeFi risk intel",
   "network": "base",
-  "as_of": "2026-10-24T14:00:00Z",
-  "captured_at": "2026-10-24T14:51:44.514Z",
+  "as_of": "2026-10-25T01:00:00Z",
+  "captured_at": "2026-10-25T01:51:44.677Z",
   "delay_hours": 24,
   "preview": false,
   "model_version": "1.3.0",
@@ -14,38 +14,38 @@
     "protocol": "morpho-blue",
     "market": "CSCBUSDC",
     "type": "lending",
-    "apy": 5.3,
-    "sustainable_apy": 4.4,
-    "tvl_usd": 61023192,
-    "risk_score": 19,
-    "opportunity_score": 72,
+    "apy": 5.27,
+    "sustainable_apy": 4.52,
+    "tvl_usd": 72051151,
+    "risk_score": 26,
+    "opportunity_score": 64,
     "confidence": 100,
-    "yield_sustainability": 83,
+    "yield_sustainability": 86,
     "liquidity": "Good",
     "primary_yield_source": "borrower_interest",
     "yield_sources": [
       {
         "category": "borrower_interest",
-        "apy": 4.1,
-        "share": 0.773
+        "apy": 4.27,
+        "share": 0.81
       },
       {
         "category": "token_incentives",
-        "apy": 1.2,
-        "share": 0.227
+        "apy": 1,
+        "share": 0.19
       }
     ],
     "major_risks": [
       {
+        "dimension": "yield",
+        "score": 33
+      },
+      {
         "dimension": "asset",
-        "score": 20
+        "score": 24
       },
       {
         "dimension": "smart_contract",
-        "score": 19
-      },
-      {
-        "dimension": "oracle",
         "score": 19
       }
     ],
@@ -65,13 +65,13 @@
     ],
     "governance_evidence": [
       "Governance: immutable contracts (https://docs.morpho.org/learn/governance/organization/, checked 2026-10-07)",
-      "Curator: Clearstar · 3-day timelock · sentinel · lends mostly against cbBTC (81%) at up to 86.0% LTV"
+      "Curator: Clearstar · 3-day timelock · sentinel · lends mostly against cbBTC (71%) at up to 86.0% LTV"
     ],
-    "tvl_change_7d_pct": 68.5,
-    "apy_change_7d_pct": -11.4,
-    "why_this_yield_exists": "Yield comes mainly from borrower interest, with a portion from token incentives. The income mix is fairly stable.",
-    "what_could_lose_money": "Main risks are price volatility in held assets, smart contract vulnerabilities in the pool and underlying layers, and oracle accuracy. The position also depends on Circle, and the pool holds a substantial amount of assets.",
-    "what_changed_recently": "TVL +68.5% over 7 days, APY -11.4% over 7 days; no risk events this week. Social signals: not yet monitored.",
+    "tvl_change_7d_pct": 98.9,
+    "apy_change_7d_pct": -12.1,
+    "why_this_yield_exists": "The yield comes from interest paid by borrowers, with a smaller portion from token incentives. This income source is largely durable.",
+    "what_could_lose_money": "The biggest risks are yield declining, price swings in the underlying tokens, and the smart contract layer. It depends on Circle as the stablecoin issuer and uses long-tail collateral.",
+    "what_changed_recently": "TVL +98.9% over 7 days, APY -12.1% over 7 days; no risk events this week. Social signals: not yet monitored.",
     "text_source": "ai",
     "url": "https://yields.fintechhodl.com/o/097b18e2-9232-4c44-bd2e-502de4ba889e/",
     "data_url": "https://yields.fintechhodl.com/data/o/097b18e2-9232-4c44-bd2e-502de4ba889e.json"

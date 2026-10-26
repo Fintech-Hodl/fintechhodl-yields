@@ -459,7 +459,202 @@
             "schema": {
               "type": "string"
             },
-            "description": "risk_adjusted, realized_apy, quoted_apy or tvl"
+            "description": "risk_adjusted, realized_apy, quoted_apy, sustainable_apy or tvl"
+          },
+          {
+            "name": "limit",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "type": "integer"
+            },
+            "description": "At most 50"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK; the PAYMENT-RESPONSE header carries the settlement receipt",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object"
+                }
+              }
+            }
+          },
+          "402": {
+            "description": "Payment required: the PAYMENT-REQUIRED header holds the x402 challenge (price, USDC on Base, pay-to address). Pay and repeat the request."
+          },
+          "503": {
+            "description": "Data is refreshing; nothing is charged"
+          }
+        }
+      }
+    },
+    "/api/v1/lending-rates": {
+      "servers": [
+        {
+          "url": "https://intel.fintechhodl.com"
+        }
+      ],
+      "get": {
+        "summary": "Lending rates: supply APY of Base lending markets, quoted vs realized on-chain",
+        "parameters": [
+          {
+            "name": "asset",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "type": "string"
+            },
+            "description": "Asset symbol"
+          },
+          {
+            "name": "stable_only",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "type": "boolean"
+            },
+            "description": "Only stablecoin principal"
+          },
+          {
+            "name": "realized_only",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "type": "boolean"
+            },
+            "description": "Only markets with a realized on-chain APY"
+          },
+          {
+            "name": "min_apy",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "type": "number"
+            },
+            "description": "Lowest quoted APY, percent"
+          },
+          {
+            "name": "risk_max",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "type": "number"
+            },
+            "description": "Highest risk score, 0-100"
+          },
+          {
+            "name": "sort",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "type": "string"
+            },
+            "description": "risk_adjusted, realized_apy, quoted_apy, sustainable_apy or tvl"
+          },
+          {
+            "name": "limit",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "type": "integer"
+            },
+            "description": "At most 50"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK; the PAYMENT-RESPONSE header carries the settlement receipt",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object"
+                }
+              }
+            }
+          },
+          "402": {
+            "description": "Payment required: the PAYMENT-REQUIRED header holds the x402 challenge (price, USDC on Base, pay-to address). Pay and repeat the request."
+          },
+          "503": {
+            "description": "Data is refreshing; nothing is charged"
+          }
+        }
+      }
+    },
+    "/api/v1/yield-farming": {
+      "servers": [
+        {
+          "url": "https://intel.fintechhodl.com"
+        }
+      ],
+      "get": {
+        "summary": "Yield farming: Base liquidity pools, concentrated liquidity and vaults, risk-rated",
+        "parameters": [
+          {
+            "name": "type",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "type": "string"
+            },
+            "description": "lp, stable_lp, concentrated or vault"
+          },
+          {
+            "name": "asset",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "type": "string"
+            },
+            "description": "Asset symbol"
+          },
+          {
+            "name": "stable_only",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "type": "boolean"
+            },
+            "description": "Only stablecoin principal"
+          },
+          {
+            "name": "realized_only",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "type": "boolean"
+            },
+            "description": "Only opportunities with a realized on-chain APY"
+          },
+          {
+            "name": "min_apy",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "type": "number"
+            },
+            "description": "Lowest quoted APY, percent"
+          },
+          {
+            "name": "risk_max",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "type": "number"
+            },
+            "description": "Highest risk score, 0-100"
+          },
+          {
+            "name": "sort",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "type": "string"
+            },
+            "description": "risk_adjusted, realized_apy, quoted_apy, sustainable_apy or tvl"
           },
           {
             "name": "limit",

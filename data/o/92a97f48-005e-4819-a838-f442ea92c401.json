@@ -2,8 +2,8 @@
   "schema_version": 1,
   "source": "FinTech Hodl, LLC — Base DeFi risk intel",
   "network": "base",
-  "as_of": "2026-10-24T14:00:00Z",
-  "captured_at": "2026-10-24T14:51:44.514Z",
+  "as_of": "2026-10-25T01:00:00Z",
+  "captured_at": "2026-10-25T01:51:44.677Z",
   "delay_hours": 24,
   "preview": false,
   "model_version": "1.3.0",
@@ -14,11 +14,11 @@
     "protocol": "morpho-blue",
     "market": "GTUSDCF",
     "type": "lending",
-    "apy": 5.48,
-    "sustainable_apy": 5.48,
-    "tvl_usd": 5142025,
-    "risk_score": 27,
-    "opportunity_score": 68,
+    "apy": 5.44,
+    "sustainable_apy": 5.44,
+    "tvl_usd": 5111223,
+    "risk_score": 30,
+    "opportunity_score": 64,
     "confidence": 100,
     "yield_sustainability": 100,
     "liquidity": "Fair",
@@ -26,18 +26,18 @@
     "yield_sources": [
       {
         "category": "borrower_interest",
-        "apy": 5.48,
+        "apy": 5.44,
         "share": 1
       }
     ],
     "major_risks": [
       {
-        "dimension": "liquidity",
-        "score": 36
+        "dimension": "asset",
+        "score": 41
       },
       {
-        "dimension": "asset",
-        "score": 34
+        "dimension": "liquidity",
+        "score": 36
       },
       {
         "dimension": "oracle",
@@ -60,13 +60,13 @@
     ],
     "governance_evidence": [
       "Governance: immutable contracts (https://docs.morpho.org/learn/governance/organization/, checked 2026-10-07)",
-      "Curator: Gauntlet · 3-day timelock · sentinel · largest collateral cbBTC (48%) at up to 86.0% LTV"
+      "Curator: Gauntlet · 3-day timelock · sentinel · largest collateral cbXRP (33%) at up to 86.0% LTV"
     ],
-    "tvl_change_7d_pct": 10.4,
-    "apy_change_7d_pct": -3.3,
-    "why_this_yield_exists": "It pays yield from interest charged to borrowers. This income source is very durable.",
-    "what_could_lose_money": "The main risks are limited ability to exit the position quickly, price movements in the underlying tokens, and potential errors in price feeds. The position also depends on Circle and holds a moderate pool size.",
-    "what_changed_recently": "TVL +10.4% over 7 days, APY -3.3% over 7 days; no risk events this week. Social signals: not yet monitored.",
+    "tvl_change_7d_pct": 9.7,
+    "apy_change_7d_pct": -3.9,
+    "why_this_yield_exists": "It pays yield from interest charged to borrowers, with the income stream considered durable.",
+    "what_could_lose_money": "Main risks include price swings in the collateral tokens, difficulty exiting the position, and potential oracle failures. The setup depends on Circle and has fair liquidity overall.",
+    "what_changed_recently": "TVL +9.7% over 7 days, APY -3.9% over 7 days; no risk events this week. Social signals: not yet monitored.",
     "text_source": "ai",
     "url": "https://yields.fintechhodl.com/o/92a97f48-005e-4819-a838-f442ea92c401/",
     "data_url": "https://yields.fintechhodl.com/data/o/92a97f48-005e-4819-a838-f442ea92c401.json"

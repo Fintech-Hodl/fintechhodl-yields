@@ -2,8 +2,8 @@
   "schema_version": 1,
   "source": "FinTech Hodl, LLC — Base DeFi risk intel",
   "network": "base",
-  "as_of": "2026-10-24T14:00:00Z",
-  "captured_at": "2026-10-24T14:51:44.514Z",
+  "as_of": "2026-10-25T01:00:00Z",
+  "captured_at": "2026-10-25T01:51:44.677Z",
   "delay_hours": 24,
   "preview": false,
   "model_version": "1.3.0",
@@ -16,9 +16,9 @@
     "type": "lending",
     "apy": 33.24,
     "sustainable_apy": 33.24,
-    "tvl_usd": 5710324,
-    "risk_score": 43,
-    "opportunity_score": 50,
+    "tvl_usd": 5709063,
+    "risk_score": 42,
+    "opportunity_score": 51,
     "confidence": 95,
     "yield_sustainability": 100,
     "liquidity": "Fair",
@@ -33,11 +33,11 @@
     "major_risks": [
       {
         "dimension": "yield",
-        "score": 55
+        "score": 54
       },
       {
         "dimension": "protocol",
-        "score": 36
+        "score": 37
       },
       {
         "dimension": "liquidity",
@@ -51,12 +51,12 @@
       }
     ],
     "governance_evidence": [],
-    "tvl_change_7d_pct": -1.9,
+    "tvl_change_7d_pct": -2,
     "apy_change_7d_pct": 3.5,
-    "why_this_yield_exists": "It pays 33.2% APY: 100% from interest paid by borrowers. That mix is mostly durable (sustainability 100/100).",
-    "what_could_lose_money": "The biggest risks are the yield falling or disappearing (55/100); the protocol itself (its age, size, audits and exploit history) (36/100); not being able to exit quickly or cheaply (36/100). It also depends on Circle. The pool holds $5.7M.",
-    "what_changed_recently": "TVL -1.9% over 7 days, APY +3.5% over 7 days; no risk events this week. Social signals: not yet monitored.",
-    "text_source": "template",
+    "why_this_yield_exists": "All of the yield comes from interest paid by borrowers, and this income source is highly durable. The market generates a large payout.",
+    "what_could_lose_money": "The main risks are changes to the yield environment, the protocol's maturity and security posture, and the difficulty exiting the position. The market also relies on Circle and holds a modest pool of capital.",
+    "what_changed_recently": "TVL -2% over 7 days, APY +3.5% over 7 days; no risk events this week. Social signals: not yet monitored.",
+    "text_source": "ai",
     "url": "https://yields.fintechhodl.com/o/35b00f23-d8f5-4a9c-822c-c323fb164215/",
     "data_url": "https://yields.fintechhodl.com/data/o/35b00f23-d8f5-4a9c-822c-c323fb164215.json"
   }
